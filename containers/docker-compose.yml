@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  qlcplus:
+    build:
+      context: .
+      dockerfile: qlcplus.Dockerfile
+    ports:
+      - "9999:9999"
+    volumes:
+      - ../qlc/scene1.qxw:/QLC/qlc.qxw # Ejemplo: reemplaza con tu archivo .qxw
+
+  ollama:
+    build:
+      context: .
+      dockerfile: ollama.Dockerfile
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+
+volumes:
+  ollama-data:
