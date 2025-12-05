@@ -1,4 +1,4 @@
-"""Definiciones de esquema para las escenas generadas."""
+"""Schemas describing generated scenes."""
 
 from dataclasses import dataclass, field
 from typing import Dict, List, Literal, Optional
@@ -8,7 +8,7 @@ SceneType = Literal["static", "chase", "cue"]
 
 @dataclass
 class FixtureState:
-    """Estado de un fixture para una escena específica."""
+    """State of a single fixture for a scene."""
 
     fixture_id: str
     channel_values: Dict[str, int] = field(default_factory=dict)
@@ -16,7 +16,7 @@ class FixtureState:
 
 @dataclass
 class SceneSpec:
-    """Especificación de una escena generada por el modelo."""
+    """Specification of a single generated scene."""
 
     name: str
     scene_type: SceneType
@@ -26,7 +26,7 @@ class SceneSpec:
 
 @dataclass
 class SceneSet:
-    """Conjunto agrupado de escenas generadas para un mismo tema o canción."""
+    """Grouped set of generated scenes for a single song or theme."""
 
     title: str
     scenes: List[SceneSpec] = field(default_factory=list)

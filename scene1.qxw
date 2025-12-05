@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.3</Version>
+  <Author>barko</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <BeatGenerator BeatType="Disabled" BPM="0"/>
+   <Universe Name="Universe 1" ID="0"/>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2"/>
+   <Universe Name="Universe 4" ID="3"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>5-ch Effect+RGB</Mode>
+   <ID>0</ID>
+   <Name>Barras LED</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>1</ID>
+   <Name>VDPLPS36B2 #01</Name>
+   <Universe>0</Universe>
+   <Address>5</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>2</ID>
+   <Name>VDPLPS36B2 #02</Name>
+   <Universe>0</Universe>
+   <Address>8</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>3</ID>
+   <Name>VDPLPS36B2 #03</Name>
+   <Universe>0</Universe>
+   <Address>11</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>4</ID>
+   <Name>VDPLPS36B2 #04</Name>
+   <Universe>0</Universe>
+   <Address>14</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>5</ID>
+   <Name>VDPLPS36B2 #05</Name>
+   <Universe>0</Universe>
+   <Address>17</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>6</ID>
+   <Name>VDPLPS36B2 #06</Name>
+   <Universe>0</Universe>
+   <Address>20</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>7</ID>
+   <Name>VDPLPS36B2 #07</Name>
+   <Universe>0</Universe>
+   <Address>23</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>8</ID>
+   <Name>VDPLPS36B2 #08</Name>
+   <Universe>0</Universe>
+   <Address>26</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>9</ID>
+   <Name>VDPLPS36B2 #09</Name>
+   <Universe>0</Universe>
+   <Address>29</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>10</ID>
+   <Name>VDPLPS36B2 #10</Name>
+   <Universe>0</Universe>
+   <Address>32</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>11</ID>
+   <Name>VDPLPS36B2 #11</Name>
+   <Universe>0</Universe>
+   <Address>35</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>12</ID>
+   <Name>VDPLPS36B2 #12</Name>
+   <Universe>0</Universe>
+   <Address>38</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Audibax</Manufacturer>
+   <Model>Dallas 180 MK2</Model>
+   <Mode>4-ch RGBW</Mode>
+   <ID>13</ID>
+   <Name>Dallas 180 MK2 #1</Name>
+   <Universe>0</Universe>
+   <Address>41</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Audibax</Manufacturer>
+   <Model>Dallas 180 MK2</Model>
+   <Mode>4-ch RGBW</Mode>
+   <ID>14</ID>
+   <Name>Dallas 180 MK2 #2</Name>
+   <Universe>0</Universe>
+   <Address>45</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Audibax</Manufacturer>
+   <Model>Dallas 180 MK2</Model>
+   <Mode>4-ch RGBW</Mode>
+   <ID>15</ID>
+   <Name>Dallas 180 MK2 #3</Name>
+   <Universe>0</Universe>
+   <Address>49</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Audibax</Manufacturer>
+   <Model>Dallas 180 MK2</Model>
+   <Mode>4-ch RGBW</Mode>
+   <ID>16</ID>
+   <Name>Dallas 180 MK2 #4</Name>
+   <Universe>0</Universe>
+   <Address>53</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Cameo</Manufacturer>
+   <Model>Superfly XS</Model>
+   <Mode>5-Channel</Mode>
+   <ID>17</ID>
+   <Name>Superfly XS</Name>
+   <Universe>0</Universe>
+   <Address>57</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQ Power</Manufacturer>
+   <Model>VDPL110CC LED Tri Spot</Model>
+   <Mode>7-Channels</Mode>
+   <ID>18</ID>
+   <Name>VDPL110CC LED Tri Spot</Name>
+   <Universe>0</Universe>
+   <Address>62</Address>
+   <Channels>7</Channels>
+  </Fixture>
+  <Function ID="0" Type="Show" Name="Nuevo Show 0">
+   <TimeDivision Type="Time" BPM="120"/>
+   <Track ID="0" Name="Rota Azul 01" SceneID="100" isMute="0">
+    <ShowFunction ID="200" StartTime="0" Duration="7000" Color="#556b80"/>
+   </Track>
+  </Function>
+  <Function ID="1" Type="Sequence" Name="" BoundScene="100">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="10000" FadeOut="0" Values="42">0:2,255</Step>
+  </Function>
+  <Function ID="100" Type="Scene" Name="Rota Azul 01" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="101" Type="Scene" Name="Rota Azul 02">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="102" Type="Scene" Name="Rota Azul 03">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="103" Type="Scene" Name="Rota Azul 04">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="104" Type="Scene" Name="Rota Azul 05">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="105" Type="Scene" Name="Rota Azul 06">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="106" Type="Scene" Name="Rota Azul 07">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="107" Type="Scene" Name="Rota Azul 08">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="108" Type="Scene" Name="Rota Azul 09">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="109" Type="Scene" Name="Rota Azul 10">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="110" Type="Scene" Name="Rota Azul 11">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="111" Type="Scene" Name="Rota Azul 12">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="112" Type="Scene" Name="Rota Azul 13">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="113" Type="Scene" Name="Rota Azul 14">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="200" Type="Chaser" Name="">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0">100</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0">101</Step>
+   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0">102</Step>
+   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0">103</Step>
+   <Step Number="4" FadeIn="0" Hold="500" FadeOut="0">104</Step>
+   <Step Number="5" FadeIn="0" Hold="500" FadeOut="0">105</Step>
+   <Step Number="6" FadeIn="0" Hold="500" FadeOut="0">106</Step>
+   <Step Number="7" FadeIn="0" Hold="500" FadeOut="0">107</Step>
+   <Step Number="8" FadeIn="0" Hold="500" FadeOut="0">108</Step>
+   <Step Number="9" FadeIn="0" Hold="500" FadeOut="0">109</Step>
+   <Step Number="10" FadeIn="0" Hold="500" FadeOut="0">110</Step>
+   <Step Number="11" FadeIn="0" Hold="500" FadeOut="0">111</Step>
+   <Step Number="12" FadeIn="0" Hold="500" FadeOut="0">112</Step>
+   <Step Number="13" FadeIn="0" Hold="500" FadeOut="0">113</Step>
+  </Function>
+  <Monitor DisplayMode="0" ShowLabels="0">
+   <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+   <ChannelStyle>1</ChannelStyle>
+   <ValueStyle>1</ValueStyle>
+   <Grid Width="5" Height="3" Depth="5" Units="0"/>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <AudioTriggers BarsNumber="16" Caption="" ID="0">
+    <WindowState Visible="False" X="665" Y="10" Width="300" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+   </AudioTriggers>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster Visible="1" ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>

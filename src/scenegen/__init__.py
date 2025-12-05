@@ -1,1 +1,1 @@
-"""Paquete para generar escenas de QLC+ asistido por un modelo de lenguaje."""
+"""Package for generating QLC+ scenes with a language model."""
