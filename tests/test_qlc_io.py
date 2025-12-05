@@ -42,6 +42,61 @@ def test_write_scenes_appends_function(tmp_path: Path) -> None:
     root = tree.getroot()
     functions = root.findall(".//qlc:Function[@Type='Scene'][@Name='Test Scene']", NS)
     assert functions, "Generated scene function missing"
-    channel = functions[0].find("qlc:Channel", NS)
-    assert channel is not None, "Scene should include at least one channel"
-    assert channel.attrib.get("Fixture") == rig.fixtures[0].fixture_id
+    fixture_val = functions[0].find("qlc:FixtureVal", NS)
+    assert fixture_val is not None, "Scene should include at least one fixture value"
+    assert fixture_val.attrib.get("ID") == rig.fixtures[0].fixture_id
+
+
+def test_write_scenes_can_create_show(tmp_path: Path) -> None:
+    rig = load_rig_from_qlc(str(WORKSPACE_PATH))
+    scene_set = SceneSet(
+        title="Test",
+        scenes=[
+            SceneSpec(
+                name="Scene A",
+                scene_type="static",
+                states=[
+                    FixtureState(
+                        fixture_id=rig.fixtures[0].fixture_id,
+                        channel_values={"ch0": 64},
+                    )
+                ],
+            ),
+            SceneSpec(
+                name="Scene B",
+                scene_type="static",
+                states=[
+                    FixtureState(
+                        fixture_id=rig.fixtures[0].fixture_id,
+                        channel_values={"ch0": 192},
+                    )
+                ],
+            ),
+        ],
+    )
+
+    output = tmp_path / "out_show.qxw"
+    write_scenes_to_qlc(
+        str(WORKSPACE_PATH),
+        rig,
+        scene_set,
+        output_path=str(output),
+        create_show=True,
+        show_name="Test Show",
+        show_step_ms=1000,
+    )
+
+    tree = ET.parse(output)
+    root = tree.getroot()
+    scenes = root.findall(".//qlc:Function[@Type='Scene']", NS)
+    scene_ids_by_name = {fn.attrib.get("Name"): fn.attrib.get("ID") for fn in scenes}
+    assert "Scene A" in scene_ids_by_name and "Scene B" in scene_ids_by_name
+
+    shows = root.findall(".//qlc:Function[@Type='Show'][@Name='Test Show']", NS)
+    assert shows, "Show function not found"
+    show_fn = shows[0]
+    show_funcs = show_fn.findall(".//qlc:ShowFunction", NS)
+    assert len(show_funcs) == 2
+    ids_in_show = {sf.attrib.get("ID") for sf in show_funcs}
+    assert scene_ids_by_name["Scene A"] in ids_in_show
+    assert scene_ids_by_name["Scene B"] in ids_in_show

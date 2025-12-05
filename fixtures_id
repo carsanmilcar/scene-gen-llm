@@ -1,0 +1,186 @@
+<ID>0</ID>
+   <Name>Barras LED</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>1</ID>
+   <Name>VDPLPS36B2 #01</Name>
+   <Universe>0</Universe>
+   <Address>5</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>2</ID>
+   <Name>VDPLPS36B2 #02</Name>
+   <Universe>0</Universe>
+   <Address>8</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>3</ID>
+   <Name>VDPLPS36B2 #03</Name>
+   <Universe>0</Universe>
+   <Address>11</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>4</ID>
+   <Name>VDPLPS36B2 #04</Name>
+   <Universe>0</Universe>
+   <Address>14</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>5</ID>
+   <Name>VDPLPS36B2 #05</Name>
+   <Universe>0</Universe>
+   <Address>17</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>6</ID>
+   <Name>VDPLPS36B2 #06</Name>
+   <Universe>0</Universe>
+   <Address>20</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>7</ID>
+   <Name>VDPLPS36B2 #07</Name>
+   <Universe>0</Universe>
+   <Address>23</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>8</ID>
+   <Name>VDPLPS36B2 #08</Name>
+   <Universe>0</Universe>
+   <Address>26</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>9</ID>
+   <Name>VDPLPS36B2 #09</Name>
+   <Universe>0</Universe>
+   <Address>29</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>10</ID>
+   <Name>VDPLPS36B2 #10</Name>
+   <Universe>0</Universe>
+   <Address>32</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>11</ID>
+   <Name>VDPLPS36B2 #11</Name>
+   <Universe>0</Universe>
+   <Address>35</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQPower</Manufacturer>
+   <Model>VDPLPS36B2</Model>
+   <Mode>3-ch RGB</Mode>
+   <ID>12</ID>
+   <Name>VDPLPS36B2 #12</Name>
+   <Universe>0</Universe>
+   <Address>38</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Audibax</Manufacturer>
+   <Model>Dallas 180 MK2</Model>
+   <Mode>4-ch RGBW</Mode>
+   <ID>13</ID>
+   <Name>Dallas 180 MK2 #1</Name>
+   <Universe>0</Universe>
+   <Address>41</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Audibax</Manufacturer>
+   <Model>Dallas 180 MK2</Model>
+   <Mode>4-ch RGBW</Mode>
+   <ID>14</ID>
+   <Name>Dallas 180 MK2 #2</Name>
+   <Universe>0</Universe>
+   <Address>45</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Audibax</Manufacturer>
+   <Model>Dallas 180 MK2</Model>
+   <Mode>4-ch RGBW</Mode>
+   <ID>15</ID>
+   <Name>Dallas 180 MK2 #3</Name>
+   <Universe>0</Universe>
+   <Address>49</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Audibax</Manufacturer>
+   <Model>Dallas 180 MK2</Model>
+   <Mode>4-ch RGBW</Mode>
+   <ID>16</ID>
+   <Name>Dallas 180 MK2 #4</Name>
+   <Universe>0</Universe>
+   <Address>53</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Cameo</Manufacturer>
+   <Model>Superfly XS</Model>
+   <Mode>5-Channel</Mode>
+   <ID>17</ID>
+   <Name>Superfly XS</Name>
+   <Universe>0</Universe>
+   <Address>57</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>HQ Power</Manufacturer>
+   <Model>VDPL110CC LED Tri Spot</Model>
+   <Mode>7-Channels</Mode>
+   <ID>18</ID>
+   <Name>VDPL110CC LED Tri Spot</Name>
+   <Universe>0</Universe>
+   <Address>62</Address>
+   <Channels>7</Channels>
+  </Fixture>

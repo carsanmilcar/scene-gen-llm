@@ -57,12 +57,17 @@ def write_scenes_to_qlc(
     rig: Rig,
     scenes: SceneSet,
     output_path: Optional[str] = None,
+    create_show: bool = False,
+    show_name: str = "Generated Show",
+    show_step_ms: int = 5000,
 ) -> None:
     """Append generated scenes to a QLC+ workspace.
 
     The original file is left untouched; by default the function writes to
     `<stem>_generated.qxw` unless `output_path` is provided.
     """
+
+    doctype = _extract_doctype(path)
 
     tree = ET.parse(path)
     root = tree.getroot()
@@ -79,9 +84,33 @@ def write_scenes_to_qlc(
 
     fixture_index: Dict[str, FixtureDef] = {fx.fixture_id: fx for fx in rig.fixtures}
 
+    # Insert new scenes before <Monitor> if present to keep expected element order.
+    monitor_idx: Optional[int] = None
+    for idx, child in enumerate(list(engine)):
+        if child.tag == f"{{{QLC_NAMESPACE}}}Monitor":
+            monitor_idx = idx
+            break
+
+    new_scene_ids: list[int] = []
     for scene in scenes.scenes:
-        _append_scene(engine, fixture_index, scene, next_id)
+        _append_scene(engine, fixture_index, scene, next_id, insert_at=monitor_idx)
+        new_scene_ids.append(next_id)
         next_id += 1
+        if monitor_idx is not None:
+            monitor_idx += 1
+
+    if create_show and new_scene_ids:
+        _append_show(
+            engine,
+            show_id=next_id,
+            scene_ids=new_scene_ids,
+            show_name=show_name,
+            step_ms=show_step_ms,
+            insert_at=monitor_idx,
+        )
+        next_id += 1
+        if monitor_idx is not None:
+            monitor_idx += 1
 
     target = (
         Path(output_path)
@@ -90,7 +119,14 @@ def write_scenes_to_qlc(
     )
 
     _indent(root)
-    tree.write(target, encoding="UTF-8", xml_declaration=True)
+
+    # ElementTree descarta el DOCTYPE; lo reinyectamos manualmente.
+    xml_body = ET.tostring(root, encoding="unicode")
+    with open(target, "w", encoding="UTF-8") as fh:
+        fh.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        if doctype:
+            fh.write(f"{doctype}\n")
+        fh.write(xml_body)
 
 
 def _append_scene(
@@ -98,11 +134,11 @@ def _append_scene(
     fixture_index: Dict[str, FixtureDef],
     scene: SceneSpec,
     scene_id: int,
+    insert_at: Optional[int] = None,
 ) -> None:
     """Create a <Function Type="Scene"> node for the provided SceneSpec."""
 
-    func_el = ET.SubElement(
-        engine,
+    func_el = ET.Element(
         f"{{{QLC_NAMESPACE}}}Function",
         {"ID": str(scene_id), "Type": "Scene", "Name": scene.name},
     )
@@ -115,25 +151,90 @@ def _append_scene(
     for fixture_state in scene.states:
         _append_fixture_channels(func_el, fixture_index, fixture_state)
 
+    if insert_at is None:
+        engine.append(func_el)
+    else:
+        engine.insert(insert_at, func_el)
+
+
+def _append_show(
+    engine: ET.Element,
+    show_id: int,
+    scene_ids: list[int],
+    show_name: str,
+    step_ms: int,
+    insert_at: Optional[int] = None,
+) -> None:
+    """Create a <Function Type='Show'> scheduling provided scenes sequentially."""
+
+    func_el = ET.Element(
+        f"{{{QLC_NAMESPACE}}}Function",
+        {"ID": str(show_id), "Type": "Show", "Name": show_name},
+    )
+    ET.SubElement(
+        func_el,
+        f"{{{QLC_NAMESPACE}}}TimeDivision",
+        {"Type": "Time", "BPM": "120"},
+    )
+    track = ET.SubElement(
+        func_el,
+        f"{{{QLC_NAMESPACE}}}Track",
+        {"ID": "0", "Name": show_name, "SceneID": str(scene_ids[0]), "isMute": "0"},
+    )
+    color = "#55aa00"
+    for idx, scene_id in enumerate(scene_ids):
+        start = idx * step_ms
+        ET.SubElement(
+            track,
+            f"{{{QLC_NAMESPACE}}}ShowFunction",
+            {
+                "ID": str(scene_id),
+                "StartTime": str(start),
+                "Duration": str(step_ms),
+                "Color": color,
+            },
+        )
+
+    if insert_at is None:
+        engine.append(func_el)
+    else:
+        engine.insert(insert_at, func_el)
+
 
 def _append_fixture_channels(
     scene_el: ET.Element,
     fixture_index: Dict[str, FixtureDef],
     fixture_state: FixtureState,
 ) -> None:
-    """Attach <Channel> nodes for a fixture state to a scene."""
+    """Attach channel values to a Scene using <FixtureVal> (QLC+ compressed format)."""
 
     fixture = fixture_index.get(fixture_state.fixture_id)
-    channel_items: Iterable[tuple[str, int]] = fixture_state.channel_values.items()
-    for fallback_idx, (channel_name, raw_value) in enumerate(channel_items):
+    channel_items: list[tuple[int, int]] = []
+
+    for fallback_idx, (channel_name, raw_value) in enumerate(
+        fixture_state.channel_values.items()
+    ):
         channel_idx = _resolve_channel_index(fixture, channel_name, fallback_idx)
         value = max(0, min(255, int(raw_value)))
-        channel_el = ET.SubElement(
-            scene_el,
-            f"{{{QLC_NAMESPACE}}}Channel",
-            {"Fixture": str(fixture_state.fixture_id), "Value": str(value)},
-        )
-        channel_el.text = str(channel_idx)
+        channel_items.append((channel_idx, value))
+
+    if not channel_items:
+        return
+
+    # Ordena por índice y comprime como "idx,val,idx,val,..."
+    channel_items.sort(key=lambda t: t[0])
+    flattened = []
+    for idx, val in channel_items:
+        flattened.append(str(idx))
+        flattened.append(str(val))
+    payload = ",".join(flattened)
+
+    fixture_val_el = ET.SubElement(
+        scene_el,
+        f"{{{QLC_NAMESPACE}}}FixtureVal",
+        {"ID": str(fixture_state.fixture_id)},
+    )
+    fixture_val_el.text = payload
 
 
 def _resolve_channel_index(
@@ -155,6 +256,20 @@ def _resolve_channel_index(
                 return channel.index
 
     return fallback
+
+
+def _extract_doctype(path: str) -> Optional[str]:
+    """Intentar recuperar la línea DOCTYPE del archivo original, si existe."""
+
+    try:
+        with open(path, "r", encoding="utf-8") as fh:
+            for line in fh:
+                stripped = line.strip()
+                if stripped.startswith("<!DOCTYPE"):
+                    return stripped
+    except OSError:
+        return None
+    return None
 
 
 def _indent(elem: ET.Element, level: int = 0) -> None:

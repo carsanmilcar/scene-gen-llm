@@ -1,0 +1,36 @@
+{
+  "categorias": {
+    "principales": [
+      "Barras LED",
+      "VDPLPS36B2 #01",
+      "VDPLPS36B2 #02",
+      "VDPLPS36B2 #03",
+      "VDPLPS36B2 #04",
+      "VDPLPS36B2 #05",
+      "VDPLPS36B2 #06",
+      "VDPLPS36B2 #07",
+      "VDPLPS36B2 #08",
+      "VDPLPS36B2 #09",
+      "VDPLPS36B2 #10",
+      "VDPLPS36B2 #11",
+      "VDPLPS36B2 #12"
+    ],
+    "puntuales": [
+      "Dallas 180 MK2 #1",
+      "Dallas 180 MK2 #2",
+      "Dallas 180 MK2 #3",
+      "Dallas 180 MK2 #4",
+      "VDPL110CC LED Tri Spot"
+    ],
+    "especiales": [
+      "Superfly XS"
+    ]
+  },
+  "aliases": {
+    "wash": "principales",
+    "principales": "principales",
+    "puntuales": "puntuales",
+    "special": "especiales",
+    "especiales": "especiales"
+  }
+}

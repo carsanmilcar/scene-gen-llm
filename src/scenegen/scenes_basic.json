@@ -1,0 +1,100 @@
+{
+  "scenes": [
+    {
+      "name": "wash_warm_soft",
+      "energy": 1,
+      "palette": "warm",
+      "motion": "static",
+      "strobe": "none",
+      "focus": "wash"
+    },
+    {
+      "name": "wash_cool_soft",
+      "energy": 1,
+      "palette": "cool",
+      "motion": "static",
+      "strobe": "none",
+      "focus": "wash"
+    },
+    {
+      "name": "wash_white_intense",
+      "energy": 3,
+      "palette": "neutral",
+      "motion": "static",
+      "strobe": "none",
+      "focus": "wash"
+    },
+    {
+      "name": "wash_dual_split",
+      "energy": 2,
+      "palette": "warm_cool_split",
+      "motion": "slow",
+      "strobe": "none",
+      "focus": "wash"
+    },
+    {
+      "name": "wash_mono_blue_soft",
+      "energy": 2,
+      "palette": "mono_blue",
+      "motion": "slow",
+      "strobe": "none",
+      "focus": "wash"
+    },
+    {
+      "name": "wash_rainbow_slow",
+      "energy": 2,
+      "palette": "rainbow",
+      "motion": "slow",
+      "strobe": "none",
+      "focus": "wash"
+    },
+    {
+      "name": "accent_hit",
+      "energy": 3,
+      "palette": "neutral",
+      "motion": "fast",
+      "strobe": "soft",
+      "focus": "puntuales"
+    },
+    {
+      "name": "puntuales_fade_color",
+      "energy": 3,
+      "palette": "cool",
+      "motion": "slow",
+      "strobe": "none",
+      "focus": "puntuales"
+    },
+    {
+      "name": "puntuales_sync_beats",
+      "energy": 4,
+      "palette": "neutral",
+      "motion": "medium",
+      "strobe": "soft",
+      "focus": "puntuales"
+    },
+    {
+      "name": "superfly_auto_slow",
+      "energy": 3,
+      "palette": "rainbow",
+      "motion": "slow",
+      "strobe": "soft",
+      "focus": "special"
+    },
+    {
+      "name": "superfly_auto_fast",
+      "energy": 5,
+      "palette": "rainbow",
+      "motion": "fast",
+      "strobe": "soft",
+      "focus": "special"
+    },
+    {
+      "name": "superparty_full_rig",
+      "energy": 5,
+      "palette": "rainbow",
+      "motion": "fast",
+      "strobe": "hard",
+      "focus": "mixed"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="ShowManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.14.3</Version>
@@ -204,80 +204,63 @@
    <Address>62</Address>
    <Channels>7</Channels>
   </Fixture>
-  <Function ID="0" Type="Show" Name="Nuevo Show 0">
+  <Function ID="0" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">2,0</FixtureVal>
+  </Function>
+  <Function ID="1" Type="Sequence" Name="Nueva Secuencia 1" BoundScene="0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1">1:2,255</Step>
+  </Function>
+  <Function ID="2" Type="Chaser" Name="Nuevo Chaser 2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">101</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">3</Step>
+  </Function>
+  <Function ID="3" Type="Scene" Name="Nueva Escena desde Live 3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="15">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="16">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="17">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="18">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
+  </Function>
+  <Function ID="4" Type="Show" Name="Nuevo Show 0">
    <TimeDivision Type="Time" BPM="120"/>
-   <Track ID="0" Name="Rota Azul 01" SceneID="100" isMute="0">
-    <ShowFunction ID="200" StartTime="0" Duration="7000" Color="#556b80"/>
+   <Track ID="0" Name="Rota Azul 01" SceneID="101" isMute="0">
+    <ShowFunction ID="5" StartTime="0" Duration="10000" Color="#556b80"/>
    </Track>
   </Function>
-  <Function ID="1" Type="Sequence" Name="" BoundScene="100">
+  <Function ID="5" Type="Sequence" Name="Nueva Secuencia 5" BoundScene="101">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
-   <Step Number="0" FadeIn="0" Hold="10000" FadeOut="0" Values="42">0:2,255</Step>
+   <Step Number="0" FadeIn="0" Hold="10000" FadeOut="0" Values="3">1:2,255</Step>
   </Function>
-  <Function ID="100" Type="Scene" Name="Rota Azul 01" Hidden="True">
+  <Function ID="101" Type="Scene" Name="Rota Azul 01" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="101" Type="Scene" Name="Rota Azul 02">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="102" Type="Scene" Name="Rota Azul 03">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="103" Type="Scene" Name="Rota Azul 04">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="104" Type="Scene" Name="Rota Azul 05">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="105" Type="Scene" Name="Rota Azul 06">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="106" Type="Scene" Name="Rota Azul 07">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="107" Type="Scene" Name="Rota Azul 08">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="108" Type="Scene" Name="Rota Azul 09">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="109" Type="Scene" Name="Rota Azul 10">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="110" Type="Scene" Name="Rota Azul 11">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="111" Type="Scene" Name="Rota Azul 12">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="112" Type="Scene" Name="Rota Azul 13">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="113" Type="Scene" Name="Rota Azul 14">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-  </Function>
-  <Function ID="200" Type="Chaser" Name="">
-   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
-   <Direction>Forward</Direction>
-   <RunOrder>Loop</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0">100</Step>
-   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0">101</Step>
-   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0">102</Step>
-   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0">103</Step>
-   <Step Number="4" FadeIn="0" Hold="500" FadeOut="0">104</Step>
-   <Step Number="5" FadeIn="0" Hold="500" FadeOut="0">105</Step>
-   <Step Number="6" FadeIn="0" Hold="500" FadeOut="0">106</Step>
-   <Step Number="7" FadeIn="0" Hold="500" FadeOut="0">107</Step>
-   <Step Number="8" FadeIn="0" Hold="500" FadeOut="0">108</Step>
-   <Step Number="9" FadeIn="0" Hold="500" FadeOut="0">109</Step>
-   <Step Number="10" FadeIn="0" Hold="500" FadeOut="0">110</Step>
-   <Step Number="11" FadeIn="0" Hold="500" FadeOut="0">111</Step>
-   <Step Number="12" FadeIn="0" Hold="500" FadeOut="0">112</Step>
-   <Step Number="13" FadeIn="0" Hold="500" FadeOut="0">113</Step>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>

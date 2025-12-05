@@ -1,0 +1,76 @@
+"""Genera múltiples escenas rule-based y las escribe a un .qxw en /generated."""
+
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+
+from scenegen.generator import generate_scenes_for_song
+from scenegen.qlc_io import load_rig_from_qlc, write_scenes_to_qlc
+from scenegen.scene_selector import SceneContext
+
+
+def load_contexts(path: Path) -> list[SceneContext]:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    contexts_raw = payload if isinstance(payload, list) else payload.get("contexts", [])
+    contexts: list[SceneContext] = []
+    for ctx in contexts_raw:
+        contexts.append(
+            SceneContext(
+                energy=int(ctx.get("energy", 3)),
+                last_palette=ctx.get("last_palette"),
+                last_scene=ctx.get("last_scene"),
+                is_drop=bool(ctx.get("is_drop", False)),
+                strobe_allowed=bool(ctx.get("strobe_allowed", True)),
+                section=ctx.get("section"),
+                tempo=ctx.get("tempo"),
+            )
+        )
+    return contexts
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Generate multiple rule-based scenes into a QLC+ workspace")
+    parser.add_argument("workspace", help="Path to the source QLC+ workspace (.qxw)")
+    parser.add_argument("--contexts", required=True, help="JSON file with a list of contexts or {'contexts': [...]}")
+    parser.add_argument("-o", "--output", help="Output .qxw path (default: generated/<workspace>_rule_based.qxw)")
+    parser.add_argument("--catalog", help="Path to scenes catalog JSON", default=None)
+    parser.add_argument("--palettes", help="Path to palettes JSON", default=None)
+    parser.add_argument("--categories", help="Path to fixture categories JSON", default=None)
+
+    args = parser.parse_args()
+
+    workspace_path = Path(args.workspace)
+    rig = load_rig_from_qlc(str(workspace_path))
+    contexts = load_contexts(Path(args.contexts))
+
+    scene_set = generate_scenes_for_song(
+        rig,
+        song_description="rule-based batch",
+        scene_contexts=contexts,
+        catalog_path=args.catalog,
+        palettes_path=args.palettes,
+        fixture_categories_path=args.categories,
+    )
+
+    output_path = (
+        Path(args.output)
+        if args.output
+        else Path("generated") / f"{workspace_path.stem}_rule_based.qxw"
+    )
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    write_scenes_to_qlc(
+        str(workspace_path),
+        rig,
+        scene_set,
+        output_path=str(output_path),
+        create_show=True,
+        show_name="Generated Show",
+        show_step_ms=5000,
+    )
+    print(f"Wrote {len(scene_set.scenes)} scenes (and show) to {output_path}")
+
+
+if __name__ == "__main__":
+    main()

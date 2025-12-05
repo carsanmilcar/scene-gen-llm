@@ -1,0 +1,23 @@
+[
+  {
+    "energy": 2,
+    "last_palette": null,
+    "is_drop": false,
+    "strobe_allowed": true,
+    "section": "intro"
+  },
+  {
+    "energy": 3,
+    "last_palette": "warm",
+    "is_drop": false,
+    "strobe_allowed": true,
+    "section": "verse"
+  },
+  {
+    "energy": 5,
+    "last_palette": "cool",
+    "is_drop": true,
+    "strobe_allowed": true,
+    "section": "drop"
+  }
+]

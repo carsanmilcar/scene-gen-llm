@@ -1,0 +1,727 @@
+{
+  "VDPLPS36B2_3ch": {
+    "channels": {
+      "1": {
+        "name": "red",
+        "function": "intensidad canal rojo",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "0-100% salida"
+          }
+        ]
+      },
+      "2": {
+        "name": "green",
+        "function": "intensidad canal verde",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "0-100% salida"
+          }
+        ]
+      },
+      "3": {
+        "name": "blue",
+        "function": "intensidad canal azul",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "0-100% salida"
+          }
+        ]
+      }
+    }
+  },
+  "BarrasLED_5ch": {
+    "channels": {
+      "1": {
+        "name": "intensity",
+        "function": "dimmer maestro",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "0-100% salida"
+          }
+        ]
+      },
+      "2": {
+        "name": "red",
+        "function": "intensidad canal rojo",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "0-100% salida"
+          }
+        ]
+      },
+      "3": {
+        "name": "green",
+        "function": "intensidad canal verde",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "0-100% salida"
+          }
+        ]
+      },
+      "4": {
+        "name": "blue",
+        "function": "intensidad canal azul",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "0-100% salida"
+          }
+        ]
+      },
+      "5": {
+        "name": "unknown",
+        "function": "canal no documentado",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "sin especificar"
+          }
+        ]
+      }
+    }
+  },
+  "VDPLPS36B2_5ch": {
+    "channels": {
+      "1": {
+        "name": "effect_mode",
+        "function": "modo de efecto",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 63,
+            "description": "RGB control via CH2-CH4"
+          },
+          {
+            "dmx_min": 64,
+            "dmx_max": 127,
+            "description": "7-colour fade (velocidad en CH5)"
+          },
+          {
+            "dmx_min": 128,
+            "dmx_max": 191,
+            "description": "7-colour change (velocidad en CH5)"
+          },
+          {
+            "dmx_min": 192,
+            "dmx_max": 255,
+            "description": "3-colour change (velocidad en CH5)"
+          }
+        ]
+      },
+      "2": {
+        "name": "red",
+        "function": "intensidad canal rojo",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "0-100% salida"
+          }
+        ]
+      },
+      "3": {
+        "name": "green",
+        "function": "intensidad canal verde",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "0-100% salida"
+          }
+        ]
+      },
+      "4": {
+        "name": "blue",
+        "function": "intensidad canal azul",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "0-100% salida"
+          }
+        ]
+      },
+      "5": {
+        "name": "speed",
+        "function": "velocidad de efecto / control musica",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 10,
+            "description": "sin velocidad"
+          },
+          {
+            "dmx_min": 11,
+            "dmx_max": 100,
+            "description": "rapido -> lento"
+          },
+          {
+            "dmx_min": 101,
+            "dmx_max": 150,
+            "description": "sin velocidad"
+          },
+          {
+            "dmx_min": 151,
+            "dmx_max": 255,
+            "description": "velocidad controlada por unidad (musica/potenciometro)"
+          }
+        ]
+      }
+    }
+  },
+  "VDPL110CC_7ch": {
+    "channels": {
+      "1": {
+        "name": "red",
+        "function": "dimmer rojo",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "0-100% rojo"
+          }
+        ]
+      },
+      "2": {
+        "name": "green",
+        "function": "dimmer verde",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "0-100% verde"
+          }
+        ]
+      },
+      "3": {
+        "name": "blue",
+        "function": "dimmer azul",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "0-100% azul"
+          }
+        ]
+      },
+      "4": {
+        "name": "color_macros",
+        "function": "macros de color",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 15,
+            "description": "sin funcion"
+          },
+          {
+            "dmx_min": 16,
+            "dmx_max": 255,
+            "description": "macros de color (override CH1-CH3)"
+          }
+        ]
+      },
+      "5": {
+        "name": "speed_strobe",
+        "function": "velocidad / estrobo",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "velocidad lento->rapido (cuando CH6 = 32-223)"
+          },
+          {
+            "dmx_min": 0,
+            "dmx_max": 15,
+            "description": "estrobo sin funcion"
+          },
+          {
+            "dmx_min": 16,
+            "dmx_max": 255,
+            "description": "estrobo lento->rapido (cuando CH4 >= 16 o CH1-CH3 != 0)"
+          }
+        ]
+      },
+      "6": {
+        "name": "mode",
+        "function": "modo de programa",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 31,
+            "description": "RGB mode (CH1-CH3)"
+          },
+          {
+            "dmx_min": 32,
+            "dmx_max": 63,
+            "description": "pulse 0->100% (CH1-CH3)"
+          },
+          {
+            "dmx_min": 64,
+            "dmx_max": 95,
+            "description": "pulse 100->0% (CH1-CH3)"
+          },
+          {
+            "dmx_min": 96,
+            "dmx_max": 127,
+            "description": "pulse 100->0->100% (CH1-CH3)"
+          },
+          {
+            "dmx_min": 128,
+            "dmx_max": 159,
+            "description": "auto fade transition"
+          },
+          {
+            "dmx_min": 160,
+            "dmx_max": 191,
+            "description": "auto snap transition - 3 colores"
+          },
+          {
+            "dmx_min": 192,
+            "dmx_max": 223,
+            "description": "auto snap transition - 7 colores"
+          },
+          {
+            "dmx_min": 224,
+            "dmx_max": 255,
+            "description": "modo sonido (sound triggering)"
+          }
+        ]
+      },
+      "7": {
+        "name": "master_dimmer",
+        "function": "dimmer maestro",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "0-100% cuando CH4 >= 16 o CH1-CH3 != 0"
+          }
+        ]
+      }
+    }
+  },
+  "Dallas180MK2_4ch": {
+    "channels": {
+      "1": {
+        "name": "red",
+        "function": "dimmer rojo",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "oscuro -> brillante"
+          }
+        ]
+      },
+      "2": {
+        "name": "green",
+        "function": "dimmer verde",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "oscuro -> brillante"
+          }
+        ]
+      },
+      "3": {
+        "name": "blue",
+        "function": "dimmer azul",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "oscuro -> brillante"
+          }
+        ]
+      },
+      "4": {
+        "name": "white",
+        "function": "dimmer blanco",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "oscuro -> brillante"
+          }
+        ]
+      }
+    }
+  },
+  "Dallas180MK2_8ch": {
+    "channels": {
+      "1": {
+        "name": "master_dimmer",
+        "function": "dimmer maestro (R,G,B,W)",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "oscuro -> brillante"
+          }
+        ]
+      },
+      "2": {
+        "name": "red",
+        "function": "dimmer rojo",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "oscuro -> brillante"
+          }
+        ]
+      },
+      "3": {
+        "name": "green",
+        "function": "dimmer verde",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "oscuro -> brillante"
+          }
+        ]
+      },
+      "4": {
+        "name": "blue",
+        "function": "dimmer azul",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "oscuro -> brillante"
+          }
+        ]
+      },
+      "5": {
+        "name": "white",
+        "function": "dimmer blanco",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "oscuro -> brillante"
+          }
+        ]
+      },
+      "6": {
+        "name": "strobe",
+        "function": "estrobo RGBW",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "lento -> rapido"
+          }
+        ]
+      },
+      "7": {
+        "name": "function",
+        "function": "modo de programa",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 50,
+            "description": "control DMX 8CH puro"
+          },
+          {
+            "dmx_min": 51,
+            "dmx_max": 100,
+            "description": "seleccion de color"
+          },
+          {
+            "dmx_min": 101,
+            "dmx_max": 150,
+            "description": "auto cambio color (jump)"
+          },
+          {
+            "dmx_min": 151,
+            "dmx_max": 200,
+            "description": "auto cambio color (fade)"
+          },
+          {
+            "dmx_min": 201,
+            "dmx_max": 250,
+            "description": "auto cambio color (pulse)"
+          },
+          {
+            "dmx_min": 251,
+            "dmx_max": 255,
+            "description": "activacion por sonido"
+          }
+        ]
+      },
+      "8": {
+        "name": "function_speed",
+        "function": "velocidad de programa",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "lento -> rapido"
+          }
+        ]
+      }
+    }
+  },
+  "SuperflyXS_5ch": {
+    "channels": {
+      "1": {
+        "name": "master_dimmer",
+        "function": "dimmer maestro",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 255,
+            "description": "0-100%"
+          }
+        ]
+      },
+      "2": {
+        "name": "led_colour",
+        "function": "modo de color Derby",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 5,
+            "description": "blackout"
+          },
+          {
+            "dmx_min": 6,
+            "dmx_max": 20,
+            "description": "rojo"
+          },
+          {
+            "dmx_min": 21,
+            "dmx_max": 35,
+            "description": "verde"
+          },
+          {
+            "dmx_min": 36,
+            "dmx_max": 50,
+            "description": "azul"
+          },
+          {
+            "dmx_min": 51,
+            "dmx_max": 65,
+            "description": "blanco"
+          },
+          {
+            "dmx_min": 66,
+            "dmx_max": 80,
+            "description": "RG"
+          },
+          {
+            "dmx_min": 81,
+            "dmx_max": 95,
+            "description": "RB"
+          },
+          {
+            "dmx_min": 96,
+            "dmx_max": 110,
+            "description": "RW"
+          },
+          {
+            "dmx_min": 111,
+            "dmx_max": 125,
+            "description": "GB"
+          },
+          {
+            "dmx_min": 126,
+            "dmx_max": 140,
+            "description": "GW"
+          },
+          {
+            "dmx_min": 141,
+            "dmx_max": 155,
+            "description": "BW"
+          },
+          {
+            "dmx_min": 156,
+            "dmx_max": 170,
+            "description": "RGB"
+          },
+          {
+            "dmx_min": 171,
+            "dmx_max": 185,
+            "description": "RGW"
+          },
+          {
+            "dmx_min": 186,
+            "dmx_max": 200,
+            "description": "GBW"
+          },
+          {
+            "dmx_min": 201,
+            "dmx_max": 215,
+            "description": "RGBW"
+          },
+          {
+            "dmx_min": 216,
+            "dmx_max": 230,
+            "description": "Auto single-colour (velocidad: valor DMX)"
+          },
+          {
+            "dmx_min": 231,
+            "dmx_max": 255,
+            "description": "Auto colour-mix (velocidad: valor DMX)"
+          }
+        ]
+      },
+      "3": {
+        "name": "strobe",
+        "function": "estrobo LED blanco",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 5,
+            "description": "sin funcion"
+          },
+          {
+            "dmx_min": 6,
+            "dmx_max": 255,
+            "description": "estrobo 1-20 Hz"
+          }
+        ]
+      },
+      "4": {
+        "name": "rotation",
+        "function": "rotacion / indexacion",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 5,
+            "description": "sin funcion"
+          },
+          {
+            "dmx_min": 6,
+            "dmx_max": 127,
+            "description": "indexacion motor"
+          },
+          {
+            "dmx_min": 128,
+            "dmx_max": 255,
+            "description": "rotacion continua (lento -> rapido)"
+          }
+        ]
+      },
+      "5": {
+        "name": "strobe_program",
+        "function": "programas de estrobo",
+        "ranges": [
+          {
+            "dmx_min": 0,
+            "dmx_max": 9,
+            "description": "blackout"
+          },
+          {
+            "dmx_min": 10,
+            "dmx_max": 19,
+            "description": "Programa 1 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 20,
+            "dmx_max": 29,
+            "description": "Programa 2 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 30,
+            "dmx_max": 39,
+            "description": "Programa 3 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 40,
+            "dmx_max": 49,
+            "description": "Programa 4 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 50,
+            "dmx_max": 59,
+            "description": "Programa 5 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 60,
+            "dmx_max": 69,
+            "description": "Programa 6 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 70,
+            "dmx_max": 79,
+            "description": "Programa 7 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 80,
+            "dmx_max": 89,
+            "description": "Programa 8 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 90,
+            "dmx_max": 99,
+            "description": "Programa 9 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 100,
+            "dmx_max": 109,
+            "description": "Programa 10 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 110,
+            "dmx_max": 119,
+            "description": "Programa 11 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 120,
+            "dmx_max": 129,
+            "description": "Programa 12 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 130,
+            "dmx_max": 139,
+            "description": "Programa 13 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 140,
+            "dmx_max": 149,
+            "description": "Programa 14 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 150,
+            "dmx_max": 159,
+            "description": "Programa 15 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 160,
+            "dmx_max": 169,
+            "description": "Programa 16 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 170,
+            "dmx_max": 179,
+            "description": "Programa 17 (lento -> rapido)"
+          },
+          {
+            "dmx_min": 180,
+            "dmx_max": 255,
+            "description": "ON fijo"
+          }
+        ]
+      }
+    }
+  }
+}
