@@ -1,14 +1,19 @@
 """Command-line entry point for scene generation."""
 
 import argparse
+import logging
 from pathlib import Path
 
 from .generator import generate_scenes_for_song
 from .qlc_io import load_rig_from_qlc, write_scenes_to_qlc
 
+logger = logging.getLogger(__name__)
+
 
 def main() -> None:
     """Orchestrate generation from CLI arguments."""
+
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
     parser = argparse.ArgumentParser(description="Generate QLC+ scenes with an LLM.")
     parser.add_argument("workspace", help="Path to the source QLC+ workspace (.qxw)")
@@ -30,7 +35,7 @@ def main() -> None:
     )
     write_scenes_to_qlc(args.workspace, rig, scene_set, output_path=target_path)
 
-    print(f"Wrote {len(scene_set.scenes)} scenes to {target_path}")
+    logger.info("Wrote %d scenes to %s", len(scene_set.scenes), target_path)
 
 
 if __name__ == "__main__":

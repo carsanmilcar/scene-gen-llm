@@ -4,11 +4,14 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 from pathlib import Path
 
 from scenegen.generator import generate_scenes_for_song
 from scenegen.qlc_io import load_rig_from_qlc, write_scenes_to_qlc
 from scenegen.scene_selector import SceneContext
+
+logger = logging.getLogger(__name__)
 
 
 def load_contexts(path: Path) -> list[SceneContext]:
@@ -31,6 +34,8 @@ def load_contexts(path: Path) -> list[SceneContext]:
 
 
 def main() -> None:
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+
     parser = argparse.ArgumentParser(description="Generate multiple rule-based scenes into a QLC+ workspace")
     parser.add_argument("workspace", help="Path to the source QLC+ workspace (.qxw)")
     parser.add_argument("--contexts", required=True, help="JSON file with a list of contexts or {'contexts': [...]}")
@@ -104,7 +109,7 @@ def main() -> None:
         primary_sweep_name="Blue Sweep",
         primary_sweep_step_ms=args.primary_sweep_step_ms,
     )
-    print(f"Wrote {len(scene_set.scenes)} scenes (and show) to {output_path}")
+    logger.info("Wrote %d scenes (and show) to %s", len(scene_set.scenes), output_path)
 
 
 if __name__ == "__main__":
