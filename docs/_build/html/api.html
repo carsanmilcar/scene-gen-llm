@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="es" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Referencia de API &#8212; documentación de scene-gen-llm - 0.0.0</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=cbb49432"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=f85f4cfb"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="prev" title="Metodología de Creación y Selección de Escenas (SynkroDMX)" href="lighting_methodology.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="referencia-de-api">
+<h1>Referencia de API<a class="headerlink" href="#referencia-de-api" title="Link to this heading">¶</a></h1>
+<p>Esta sección resume los módulos principales usados en la generación y escritura de escenas.</p>
+<section id="entrada-y-salida-de-qlc">
+<h2>Entrada y salida de QLC+<a class="headerlink" href="#entrada-y-salida-de-qlc" title="Link to this heading">¶</a></h2>
+<p>.. py:module:: scenegen.qlc_io</p>
+<p>Utility helpers to read and write QLC+ workspace files.</p>
+<p>.. py:function:: load_rig_from_qlc(path)
+:module: scenegen.qlc_io</p>
+<p>Load a rig definition from a QLC+ workspace (.qxw).</p>
+<p>.. py:function:: write_scenes_to_qlc(path, rig, scenes, output_path=None, create_show=False, show_name=”Generated Show”, show_step_ms=5000, create_flash_chaser=False, flash_chaser_name=”Flash White”, flash_step_ms=100, flash_total_ms=300000, create_primary_sweep=False, primary_sweep_name=”Blue Sweep”, primary_sweep_step_ms=500)
+:module: scenegen.qlc_io</p>
+<p>Append generated scenes to a QLC+ workspace.</p>
+<p>The original file is left untouched; by default the function writes to
+<code class="docutils literal notranslate"><span class="pre">&lt;stem&gt;_generated.qxw</span></code> unless <code class="docutils literal notranslate"><span class="pre">output_path</span></code> is provided.</p>
+</section>
+<section id="modelado-de-rig-y-escenas">
+<h2>Modelado de rig y escenas<a class="headerlink" href="#modelado-de-rig-y-escenas" title="Link to this heading">¶</a></h2>
+<p>.. py:module:: scenegen.rig</p>
+<p>Data models to describe a QLC+ rig.</p>
+<p>.. py:class:: ChannelDef(index, name, channel_type=”generic”, default_value=None)
+:module: scenegen.rig</p>
+<p>Describe a single channel inside a fixture.</p>
+<p>.. py:class:: FixtureDef(fixture_id, name, manufacturer, model, mode, universe, address, channels=<factory>)
+:module: scenegen.rig</p>
+<p>Describe a fixture within the rig.</p>
+<p>.. py:property:: FixtureDef.channel_count
+:module: scenegen.rig
+:type: int</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  Return the number of channels this fixture exposes.
+</pre></div>
+</div>
+<p>.. py:class:: Rig(name, fixtures=<factory>)
+:module: scenegen.rig</p>
+<p>Data model for a full rig ready for scene generation.</p>
+<p>.. py:module:: scenegen.schema</p>
+<p>Schemas describing generated scenes.</p>
+<p>.. py:class:: FixtureState(fixture_id, channel_values=<factory>)
+:module: scenegen.schema</p>
+<p>State of a single fixture for a scene.</p>
+<p>.. py:class:: SceneSpec(name, scene_type, states=<factory>, description=None)
+:module: scenegen.schema</p>
+<p>Specification of a single generated scene.</p>
+<p>.. py:class:: SceneSet(title, scenes=<factory>)
+:module: scenegen.schema</p>
+<p>Grouped set of generated scenes for a single song or theme.</p>
+</section>
+<section id="motor-de-generacion">
+<h2>Motor de generación<a class="headerlink" href="#motor-de-generacion" title="Link to this heading">¶</a></h2>
+<p>.. py:module:: scenegen.generator</p>
+<p>Scene generation pipeline driven by a language model or rule-based selector.</p>
+<p>.. py:function:: generate_scenes_for_song(rig, song_description, scene_context=None, scene_contexts=None, catalog_path=None, palettes_path=None, fixture_categories_path=None, llm_client=None)
+:module: scenegen.generator</p>
+<p>Generate a <code class="docutils literal notranslate"><span class="pre">SceneSet</span></code> using rule-based selection or the LLM fallback.</p>
+<p>.. py:module:: scenegen.prompt</p>
+<p>Prompt builder to guide the language model.</p>
+<p>.. py:function:: build_prompt(rig, song_description)
+:module: scenegen.prompt</p>
+<p>Create a text prompt describing the rig and desired output schema.</p>
+<p>.. py:module:: scenegen.llm_client</p>
+<p>Lightweight client to talk to a local language model (e.g., Ollama).</p>
+<p>.. py:class:: LLMClient(base_url=”http://localhost:11434”, model=”phi3:mini”)
+:module: scenegen.llm_client</p>
+<p>Encapsulates calls to the configured LLM endpoint.</p>
+<p>.. py:method:: LLMClient.generate(prompt, max_tokens=1024)
+:module: scenegen.llm_client</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  Send the prompt to the model and return the raw response JSON.
+</pre></div>
+</div>
+<p>.. py:module:: scenegen.scene_mapper</p>
+<p>Translate semantic scenes into <code class="docutils literal notranslate"><span class="pre">SceneSpec</span></code> instances ready for QLC+.</p>
+<p>.. py:function:: load_palettes(path)
+:module: scenegen.scene_mapper</p>
+<p>Load color palettes from JSON (root key: <code class="docutils literal notranslate"><span class="pre">palettes</span></code>).</p>
+<p>.. py:function:: load_fixture_categories(path)
+:module: scenegen.scene_mapper</p>
+<p>Load fixture categories (and aliases) that map names to focus buckets.</p>
+<p>.. py:function:: apply_scene(scene, rig, palettes, fixture_categories)
+:module: scenegen.scene_mapper</p>
+<p>Build a <code class="docutils literal notranslate"><span class="pre">SceneSpec</span></code> from a semantic scene and a rig definition.</p>
+<p>.. py:module:: scenegen.scene_selector</p>
+<p>Rule-based semantic scene selector inspired by the SynkroDMX engine.</p>
+<p>.. py:class:: SceneContext(energy, last_palette=None, last_scene=None, is_drop=False, strobe_allowed=True, section=None, tempo=None)
+:module: scenegen.scene_selector</p>
+<p>Music context and recent state used to pick the next scene.</p>
+<p>.. py:class:: SemanticScene(name, energy, palette, motion, strobe, focus, meta=None)
+:module: scenegen.scene_selector</p>
+<p>Semantic (non-DMX) scene with the model parameters.</p>
+<p>.. py:method:: SemanticScene.from_dict(data)
+:module: scenegen.scene_selector
+:classmethod:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  Build a ``SemanticScene`` from a plain dictionary.
+</pre></div>
+</div>
+<p>.. py:function:: load_scene_catalog(path)
+:module: scenegen.scene_selector</p>
+<p>Load a semantic scene catalog from JSON (root key: <code class="docutils literal notranslate"><span class="pre">scenes</span></code>).</p>
+<p>.. py:function:: select_scene(context, catalog)
+:module: scenegen.scene_selector</p>
+<p>Select a scene applying the methodology filters.</p>
+</section>
+<section id="cli">
+<h2>CLI<a class="headerlink" href="#cli" title="Link to this heading">¶</a></h2>
+<p>.. py:module:: scenegen.cli</p>
+<p>Command-line entry point for scene generation.</p>
+<p>.. py:function:: main()
+:module: scenegen.cli</p>
+<p>Orchestrate generation from CLI arguments.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">scene-gen-llm</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navegación</h3>
+<p class="caption" role="heading"><span class="caption-text">Contenido</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Guía rápida</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lighting_methodology.html">Metodología de Creación y Selección de Escenas (SynkroDMX)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Referencia de API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#entrada-y-salida-de-qlc">Entrada y salida de QLC+</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modelado-de-rig-y-escenas">Modelado de rig y escenas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#motor-de-generacion">Motor de generación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cli">CLI</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="lighting_methodology.html" title="capítulo anterior">Metodología de Creación y Selección de Escenas (SynkroDMX)</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/api.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

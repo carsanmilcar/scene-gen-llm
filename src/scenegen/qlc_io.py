@@ -71,7 +71,7 @@ def write_scenes_to_qlc(
     """Append generated scenes to a QLC+ workspace.
 
     The original file is left untouched; by default the function writes to
-    `<stem>_generated.qxw` unless `output_path` is provided.
+    ``<stem>_generated.qxw`` unless ``output_path`` is provided.
     """
 
     doctype = _extract_doctype(path)
@@ -205,7 +205,7 @@ def write_scenes_to_qlc(
 
     _indent(root)
 
-    # ElementTree descarta el DOCTYPE; lo reinyectamos manualmente.
+    # ElementTree drops the DOCTYPE; re-inject it manually.
     xml_body = ET.tostring(root, encoding="unicode")
     with open(target, "w", encoding="UTF-8") as fh:
         fh.write('<?xml version="1.0" encoding="UTF-8"?>\n')
@@ -308,7 +308,7 @@ def _append_fixture_channels(
     if not channel_items:
         return
 
-    # Ordena por índice y comprime como "idx,val,idx,val,..."
+    # Sort by index and compress as "idx,val,idx,val,..."
     channel_items.sort(key=lambda t: t[0])
     flattened = []
     for idx, val in channel_items:
@@ -366,7 +366,7 @@ def _append_chaser(
 def _resolve_channel_index(
     fixture: Optional[FixtureDef], channel_name: str, fallback: int
 ) -> int:
-    """Resolve channel names like '0', 'ch1' or fixture channel names to an index."""
+    """Resolve channel names like ``0``, ``ch1`` or fixture channel names to an index."""
 
     lowered = channel_name.lower()
     if lowered.isdigit():
@@ -385,7 +385,7 @@ def _resolve_channel_index(
 
 
 def _extract_doctype(path: str) -> Optional[str]:
-    """Intentar recuperar la línea DOCTYPE del archivo original, si existe."""
+    """Try to recover the DOCTYPE line from the original file, if any."""
 
     try:
         with open(path, "r", encoding="utf-8") as fh:
