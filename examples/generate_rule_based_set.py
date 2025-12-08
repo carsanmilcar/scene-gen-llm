@@ -38,6 +38,34 @@ def main() -> None:
     parser.add_argument("--catalog", help="Path to scenes catalog JSON", default=None)
     parser.add_argument("--palettes", help="Path to palettes JSON", default=None)
     parser.add_argument("--categories", help="Path to fixture categories JSON", default=None)
+    parser.add_argument(
+        "--flash-chaser",
+        action="store_true",
+        help="Create an automatic flash chaser (white 100ms) and a show to run it",
+    )
+    parser.add_argument(
+        "--flash-step-ms",
+        type=int,
+        default=100,
+        help="Hold time per step in the flash chaser (ms). Default: 100",
+    )
+    parser.add_argument(
+        "--flash-total-ms",
+        type=int,
+        default=300000,
+        help="Total duration for the flash show (ms). Default: 300000 (5 min)",
+    )
+    parser.add_argument(
+        "--primary-sweep",
+        action="store_true",
+        help="Create a blue sweep chaser through primary wash fixtures",
+    )
+    parser.add_argument(
+        "--primary-sweep-step-ms",
+        type=int,
+        default=500,
+        help="Hold time per step in the primary sweep chaser (ms). Default: 500",
+    )
 
     args = parser.parse_args()
 
@@ -68,6 +96,13 @@ def main() -> None:
         create_show=True,
         show_name="Generated Show",
         show_step_ms=5000,
+        create_flash_chaser=args.flash_chaser,
+        flash_chaser_name="Flash White",
+        flash_step_ms=args.flash_step_ms,
+        flash_total_ms=args.flash_total_ms,
+        create_primary_sweep=args.primary_sweep,
+        primary_sweep_name="Blue Sweep",
+        primary_sweep_step_ms=args.primary_sweep_step_ms,
     )
     print(f"Wrote {len(scene_set.scenes)} scenes (and show) to {output_path}")
 

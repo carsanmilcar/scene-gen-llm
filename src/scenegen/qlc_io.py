@@ -60,6 +60,13 @@ def write_scenes_to_qlc(
     create_show: bool = False,
     show_name: str = "Generated Show",
     show_step_ms: int = 5000,
+    create_flash_chaser: bool = False,
+    flash_chaser_name: str = "Flash White",
+    flash_step_ms: int = 100,
+    flash_total_ms: int = 300000,
+    create_primary_sweep: bool = False,
+    primary_sweep_name: str = "Blue Sweep",
+    primary_sweep_step_ms: int = 500,
 ) -> None:
     """Append generated scenes to a QLC+ workspace.
 
@@ -111,6 +118,84 @@ def write_scenes_to_qlc(
         next_id += 1
         if monitor_idx is not None:
             monitor_idx += 1
+
+    # Optional: create a flash chaser (white on/off) and a show to run it for X ms.
+    if create_flash_chaser:
+        flash_on, flash_off = _build_flash_scenes(rig)
+        flash_on_id, flash_off_id = next_id, next_id + 1
+        _append_scene(engine, fixture_index, flash_on, flash_on_id, insert_at=monitor_idx)
+        next_id += 1
+        if monitor_idx is not None:
+            monitor_idx += 1
+        _append_scene(engine, fixture_index, flash_off, flash_off_id, insert_at=monitor_idx)
+        next_id += 1
+        if monitor_idx is not None:
+            monitor_idx += 1
+
+        chaser_id = next_id
+        _append_chaser(
+            engine,
+            chaser_id=chaser_id,
+            step_scene_ids=[flash_on_id, flash_off_id],
+            chaser_name=flash_chaser_name,
+            step_ms=flash_step_ms,
+            insert_at=monitor_idx,
+        )
+        next_id += 1
+        if monitor_idx is not None:
+            monitor_idx += 1
+
+        if create_show:
+            _append_show(
+                engine,
+                show_id=next_id,
+                scene_ids=[chaser_id],
+                show_name=f"{flash_chaser_name} Show",
+                step_ms=flash_total_ms,
+                is_chaser=True,
+                insert_at=monitor_idx,
+            )
+            next_id += 1
+            if monitor_idx is not None:
+                monitor_idx += 1
+
+    # Optional: create a primary sweep chaser (wash blue stepping through fixtures).
+    if create_primary_sweep:
+        sweep_scenes = _build_primary_sweep_scenes(rig)
+        sweep_scene_ids: list[int] = []
+        for scene in sweep_scenes:
+            _append_scene(engine, fixture_index, scene, next_id, insert_at=monitor_idx)
+            sweep_scene_ids.append(next_id)
+            next_id += 1
+            if monitor_idx is not None:
+                monitor_idx += 1
+
+        chaser_id = next_id
+        _append_chaser(
+            engine,
+            chaser_id=chaser_id,
+            step_scene_ids=sweep_scene_ids,
+            chaser_name=primary_sweep_name,
+            step_ms=primary_sweep_step_ms,
+            insert_at=monitor_idx,
+        )
+        next_id += 1
+        if monitor_idx is not None:
+            monitor_idx += 1
+
+        if create_show:
+            _append_show(
+                engine,
+                show_id=next_id,
+                scene_ids=[chaser_id],
+                show_name=f"{primary_sweep_name} Show",
+                step_ms=primary_sweep_step_ms * len(sweep_scene_ids),
+                is_chaser=True,
+                insert_at=monitor_idx,
+            )
+            next_id += 1
+            if monitor_idx is not None:
+                monitor_idx += 1
 
     target = (
         Path(output_path)
@@ -164,8 +249,9 @@ def _append_show(
     show_name: str,
     step_ms: int,
     insert_at: Optional[int] = None,
+    is_chaser: bool = False,
 ) -> None:
-    """Create a <Function Type='Show'> scheduling provided scenes sequentially."""
+    """Create a <Function Type='Show'> scheduling provided scenes/chaser sequentially."""
 
     func_el = ET.Element(
         f"{{{QLC_NAMESPACE}}}Function",
@@ -184,13 +270,14 @@ def _append_show(
     color = "#55aa00"
     for idx, scene_id in enumerate(scene_ids):
         start = idx * step_ms
+        duration = "0" if is_chaser else str(step_ms)
         ET.SubElement(
             track,
             f"{{{QLC_NAMESPACE}}}ShowFunction",
             {
                 "ID": str(scene_id),
                 "StartTime": str(start),
-                "Duration": str(step_ms),
+                "Duration": duration,
                 "Color": color,
             },
         )
@@ -237,6 +324,45 @@ def _append_fixture_channels(
     fixture_val_el.text = payload
 
 
+def _append_chaser(
+    engine: ET.Element,
+    chaser_id: int,
+    step_scene_ids: list[int],
+    chaser_name: str,
+    step_ms: int,
+    insert_at: Optional[int] = None,
+) -> None:
+    """Create a <Function Type='Chaser'> alternating provided scene IDs."""
+
+    func_el = ET.Element(
+        f"{{{QLC_NAMESPACE}}}Function",
+        {"ID": str(chaser_id), "Type": "Chaser", "Name": chaser_name},
+    )
+    ET.SubElement(
+        func_el,
+        f"{{{QLC_NAMESPACE}}}Speed",
+        {"FadeIn": "0", "FadeOut": "0", "Duration": str(step_ms)},
+    )
+    ET.SubElement(func_el, f"{{{QLC_NAMESPACE}}}Direction").text = "Forward"
+    ET.SubElement(func_el, f"{{{QLC_NAMESPACE}}}RunOrder").text = "Loop"
+    ET.SubElement(
+        func_el,
+        f"{{{QLC_NAMESPACE}}}SpeedModes",
+        {"FadeIn": "Default", "FadeOut": "Default", "Duration": "Common"},
+    )
+    for idx, scene_id in enumerate(step_scene_ids):
+        ET.SubElement(
+            func_el,
+            f"{{{QLC_NAMESPACE}}}Step",
+            {"Number": str(idx), "FadeIn": "0", "Hold": str(step_ms), "FadeOut": "0"},
+        ).text = str(scene_id)
+
+    if insert_at is None:
+        engine.append(func_el)
+    else:
+        engine.insert(insert_at, func_el)
+
+
 def _resolve_channel_index(
     fixture: Optional[FixtureDef], channel_name: str, fallback: int
 ) -> int:
@@ -270,6 +396,124 @@ def _extract_doctype(path: str) -> Optional[str]:
     except OSError:
         return None
     return None
+
+
+def _build_flash_scenes(rig: Rig) -> tuple[SceneSpec, SceneSpec]:
+    """Build ON/OFF scenes to be used in a flash chaser."""
+
+    states_on: list[FixtureState] = []
+    states_off: list[FixtureState] = []
+    for fixture in rig.fixtures:
+        # ON state: white at full on channel layout.
+        channel_values_on: dict[str, int] = {}
+        if fixture.channel_count >= 5:
+            channel_values_on["ch0"] = 255
+            channel_values_on["ch1"] = 255
+            channel_values_on["ch2"] = 255
+            channel_values_on["ch3"] = 255
+            channel_values_on["ch4"] = 255
+        elif fixture.channel_count == 4:
+            channel_values_on["ch0"] = 255
+            channel_values_on["ch1"] = 255
+            channel_values_on["ch2"] = 255
+            channel_values_on["ch3"] = 255
+        elif fixture.channel_count >= 3:
+            channel_values_on["ch0"] = 255
+            channel_values_on["ch1"] = 255
+            channel_values_on["ch2"] = 255
+        elif fixture.channel_count >= 1:
+            channel_values_on["ch0"] = 255
+
+        states_on.append(
+            FixtureState(fixture_id=fixture.fixture_id, channel_values=channel_values_on)
+        )
+
+        states_off.append(
+            FixtureState(fixture_id=fixture.fixture_id, channel_values={"ch0": 0})
+        )
+
+    on_scene = SceneSpec(name="Flash ON", scene_type="static", states=states_on)
+    off_scene = SceneSpec(name="Flash OFF", scene_type="static", states=states_off)
+    return on_scene, off_scene
+
+
+def _build_primary_sweep_scenes(rig: Rig) -> list[SceneSpec]:
+    """Build a list of scenes that sweep primary wash fixtures in blue, one at a time."""
+
+    # Identify bar LED (keep on), wash fixtures to sweep, and dim blue color.
+    bar_fixture = next((fx for fx in rig.fixtures if "Barras LED" in fx.name), None)
+    wash_fixtures = [
+        fx for fx in rig.fixtures if "VDPLPS36B2" in fx.name or "Barras LED" in fx.name
+    ]
+    sweep_targets = [fx for fx in wash_fixtures if fx is not bar_fixture]
+
+    scenes: list[SceneSpec] = []
+    for target in sweep_targets or wash_fixtures:
+        states: list[FixtureState] = []
+
+        # Bar LED always blue dim.
+        if bar_fixture:
+            states.append(
+                FixtureState(
+                    fixture_id=bar_fixture.fixture_id,
+                    channel_values=_blue_values_for_fixture(bar_fixture, intensity=128),
+                )
+            )
+
+        # For each wash: only the target is on blue; others off.
+        for fx in sweep_targets:
+            if fx == target:
+                states.append(
+                    FixtureState(
+                        fixture_id=fx.fixture_id,
+                        channel_values=_blue_values_for_fixture(fx, intensity=180),
+                    )
+                )
+            else:
+                states.append(
+                    FixtureState(
+                        fixture_id=fx.fixture_id,
+                        channel_values=_off_values_for_fixture(fx),
+                    )
+                )
+
+        scenes.append(
+            SceneSpec(
+                name=f"Sweep {target.name}",
+                scene_type="static",
+                states=states,
+            )
+        )
+
+    return scenes
+
+
+def _blue_values_for_fixture(fixture: FixtureDef, intensity: int) -> dict[str, int]:
+    """Return channel map for blue color with optional dimmer."""
+
+    if fixture.channel_count >= 5:
+        return {"ch0": intensity, "ch1": 0, "ch2": 0, "ch3": 255, "ch4": 0}
+    if fixture.channel_count == 4:
+        return {"ch0": intensity, "ch1": 0, "ch2": 0, "ch3": 255}
+    if fixture.channel_count >= 3:
+        return {"ch0": 0, "ch1": 0, "ch2": 255}
+    if fixture.channel_count >= 1:
+        return {"ch0": intensity}
+    return {}
+
+
+def _off_values_for_fixture(fixture: FixtureDef) -> dict[str, int]:
+    """Return channel map to turn a fixture off."""
+
+    if fixture.channel_count >= 5:
+        return {"ch0": 0, "ch1": 0, "ch2": 0, "ch3": 0, "ch4": 0}
+    if fixture.channel_count == 4:
+        return {"ch0": 0, "ch1": 0, "ch2": 0, "ch3": 0}
+    if fixture.channel_count >= 3:
+        return {"ch0": 0, "ch1": 0, "ch2": 0}
+    if fixture.channel_count >= 1:
+        return {"ch0": 0}
+    return {}
 
 
 def _indent(elem: ET.Element, level: int = 0) -> None:
