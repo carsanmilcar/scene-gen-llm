@@ -7,8 +7,15 @@
 
 ## Install the project
 ```bash
+# Windows (PowerShell)
 python -m venv .venv
-.venv\Scripts\activate
+.venv\Scripts\Activate.ps1
+python -m pip install -U pip
+python -m pip install -e .
+
+# macOS / Linux
+python3 -m venv .venv
+source .venv/bin/activate
 python -m pip install -U pip
 python -m pip install -e .
 ```

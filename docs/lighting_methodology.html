@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="API Reference" href="api.html"><link rel="prev" title="Quickstart" href="quickstart.html">
 
     <!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
-        <title>Scene Creation and Selection Methodology (SynkroDMX) - scene-gen-llm 0.0.0 documentation</title>
+        <title>Scene Creation and Selection Methodology (SynkroDMX) - scene-gen-llm documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=580074bf" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
@@ -161,7 +161,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">scene-gen-llm 0.0.0 documentation</div></a>
+      <a href="index.html"><div class="brand">scene-gen-llm documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -182,7 +182,7 @@
       
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
-  <span class="sidebar-brand-text">scene-gen-llm 0.0.0 documentation</span>
+  <span class="sidebar-brand-text">scene-gen-llm documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -247,7 +247,7 @@
 <h3>2.1. Primaries (Wash)<a class="headerlink" href="#primaries-wash" title="Link to this heading">¶</a></h3>
 <p>Provide the base atmosphere: uniform color and steady presence.</p>
 <ul class="simple">
-<li><p>Examples: LED bars, VDPLPS36B2 (#01–#12).</p></li>
+<li><p>Examples: LED bars, VDPLPS36B2 (#01-#12).</p></li>
 <li><p>Functions: background color per <code class="docutils literal notranslate"><span class="pre">palette</span></code>, soft chases or slow fades, minimum light always present.</p></li>
 </ul>
 </section>
@@ -255,7 +255,7 @@
 <h3>2.2. Accents (Spots)<a class="headerlink" href="#accents-spots" title="Link to this heading">¶</a></h3>
 <p>High punch or visual presence for featured moments.</p>
 <ul class="simple">
-<li><p>Examples: Dallas 180 MK2 (#1–#4), VDPL110CC LED Tri Spot.</p></li>
+<li><p>Examples: Dallas 180 MK2 (#1-#4), VDPL110CC LED Tri Spot.</p></li>
 <li><p>Functions: rhythmic hits, flashes on drops, targeted color changes, reinforcement when <code class="docutils literal notranslate"><span class="pre">energy</span></code> rises.</p></li>
 </ul>
 </section>
@@ -274,11 +274,11 @@
 <section id="core-parameters">
 <h3>3.1. Core parameters<a class="headerlink" href="#core-parameters" title="Link to this heading">¶</a></h3>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">energy</span></code> (1–5): 1 = very soft; 5 = extremely intense.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">energy</span></code> (1-5): 1 = very soft; 5 = extremely intense.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">palette</span></code>: base sets, e.g., <code class="docutils literal notranslate"><span class="pre">warm</span></code>, <code class="docutils literal notranslate"><span class="pre">cool</span></code>, <code class="docutils literal notranslate"><span class="pre">neutral</span></code>, <code class="docutils literal notranslate"><span class="pre">mono_blue</span></code>, <code class="docutils literal notranslate"><span class="pre">rainbow</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">motion</span></code>: <code class="docutils literal notranslate"><span class="pre">static</span></code>, <code class="docutils literal notranslate"><span class="pre">slow</span></code>, <code class="docutils literal notranslate"><span class="pre">medium</span></code>, <code class="docutils literal notranslate"><span class="pre">fast</span></code>; defines chase/transition speed.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">strobe</span></code>: <code class="docutils literal notranslate"><span class="pre">none</span></code>, <code class="docutils literal notranslate"><span class="pre">soft</span></code>, <code class="docutils literal notranslate"><span class="pre">hard</span></code>; controls permission and intensity of strobe.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">focus</span></code>: leading category: <code class="docutils literal notranslate"><span class="pre">wash</span></code>, <code class="docutils literal notranslate"><span class="pre">puntuales</span></code>, <code class="docutils literal notranslate"><span class="pre">special</span></code>, <code class="docutils literal notranslate"><span class="pre">mixed</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">focus</span></code>: leading category: <code class="docutils literal notranslate"><span class="pre">wash</span></code>, <code class="docutils literal notranslate"><span class="pre">accents</span></code>, <code class="docutils literal notranslate"><span class="pre">special</span></code>, <code class="docutils literal notranslate"><span class="pre">mixed</span></code>.</p></li>
 </ul>
 </section>
 </section>
@@ -289,7 +289,7 @@
 <h3>4.1. Wash scenes (primaries)<a class="headerlink" href="#wash-scenes-primaries" title="Link to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">wash_warm_soft</span></code>: <code class="docutils literal notranslate"><span class="pre">energy</span></code>=1, <code class="docutils literal notranslate"><span class="pre">palette</span></code>=<code class="docutils literal notranslate"><span class="pre">warm</span></code>, <code class="docutils literal notranslate"><span class="pre">motion</span></code>=<code class="docutils literal notranslate"><span class="pre">static</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">wash_cool_soft</span></code>: <code class="docutils literal notranslate"><span class="pre">energy</span></code>=1–2, <code class="docutils literal notranslate"><span class="pre">palette</span></code>=<code class="docutils literal notranslate"><span class="pre">cool</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">wash_cool_soft</span></code>: <code class="docutils literal notranslate"><span class="pre">energy</span></code>=1-2, <code class="docutils literal notranslate"><span class="pre">palette</span></code>=<code class="docutils literal notranslate"><span class="pre">cool</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">wash_white_intense</span></code>: <code class="docutils literal notranslate"><span class="pre">energy</span></code>=3, <code class="docutils literal notranslate"><span class="pre">palette</span></code>=<code class="docutils literal notranslate"><span class="pre">neutral</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">wash_dual_split</span></code>: half <code class="docutils literal notranslate"><span class="pre">warm</span></code> / half <code class="docutils literal notranslate"><span class="pre">cool</span></code>, <code class="docutils literal notranslate"><span class="pre">motion</span></code>=<code class="docutils literal notranslate"><span class="pre">slow</span></code>.</p></li>
 </ul>
@@ -297,9 +297,9 @@
 <section id="scenes-with-accents">
 <h3>4.2. Scenes with accents<a class="headerlink" href="#scenes-with-accents" title="Link to this heading">¶</a></h3>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">accent_hit</span></code>: accents deliver brief hits, primaries stay soft, <code class="docutils literal notranslate"><span class="pre">energy</span></code>=3–4.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">puntuales_fade_color</span></code>: slow transitions on accents over static wash.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">puntuales_sync_beats</span></code>: on selected beats (e.g., 1 and 3).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">accent_hit</span></code>: accents deliver brief hits, primaries stay soft, <code class="docutils literal notranslate"><span class="pre">energy</span></code>=3-4.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">accent_fade_color</span></code>: slow transitions on accents over static wash.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">accent_sync_beats</span></code>: on selected beats (e.g., 1 and 3).</p></li>
 </ul>
 </section>
 <section id="specials">
@@ -317,9 +317,9 @@
 <section id="by-energy-level">
 <h3>5.1. By energy level<a class="headerlink" href="#by-energy-level" title="Link to this heading">¶</a></h3>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">energy</span></code> 1–2 (intro, soft verses, outro): scenes with <code class="docutils literal notranslate"><span class="pre">focus</span></code>=<code class="docutils literal notranslate"><span class="pre">wash</span></code>; no <code class="docutils literal notranslate"><span class="pre">strobe</span></code>; accents off or minimal; specials forbidden.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">energy</span></code> 1-2 (intro, soft verses, outro): scenes with <code class="docutils literal notranslate"><span class="pre">focus</span></code>=<code class="docutils literal notranslate"><span class="pre">wash</span></code>; no <code class="docutils literal notranslate"><span class="pre">strobe</span></code>; accents off or minimal; specials forbidden.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">energy</span></code> 3 (strong verse, mild buildup): wash + light accents; some slow <code class="docutils literal notranslate"><span class="pre">motion</span></code>; <code class="docutils literal notranslate"><span class="pre">strobe</span></code> only if <code class="docutils literal notranslate"><span class="pre">soft</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">energy</span></code> 4–5 (chorus, drop, peaks): enable accents as hits; allow Superfly; fast chases; <code class="docutils literal notranslate"><span class="pre">strobe</span></code> moderate (<code class="docutils literal notranslate"><span class="pre">soft</span></code>) or <code class="docutils literal notranslate"><span class="pre">hard</span></code> only for key moments.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">energy</span></code> 4-5 (chorus, drop, peaks): enable accents as hits; allow Superfly; fast chases; <code class="docutils literal notranslate"><span class="pre">strobe</span></code> moderate (<code class="docutils literal notranslate"><span class="pre">soft</span></code>) or <code class="docutils literal notranslate"><span class="pre">hard</span></code> only for key moments.</p></li>
 </ul>
 </section>
 </section>
@@ -329,7 +329,7 @@
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">palette</span></code>: do not repeat the same palette for more than two scenes in a row.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">strobe</span></code>: avoid chaining <code class="docutils literal notranslate"><span class="pre">strobe</span></code>=<code class="docutils literal notranslate"><span class="pre">hard</span></code>; do not keep strobe active beyond X seconds (configurable).</p></li>
-<li><p>Specials: Superfly only if <code class="docutils literal notranslate"><span class="pre">energy</span></code> ≥ 4 and turned off after Y seconds unless exceptional.</p></li>
+<li><p>Specials: Superfly only if <code class="docutils literal notranslate"><span class="pre">energy</span></code> &gt;= 4 and turned off after Y seconds unless exceptional.</p></li>
 <li><p>Accents: avoid staying on continuously; only rhythmic hits or short effects.</p></li>
 </ul>
 </section>
@@ -338,24 +338,24 @@
 <p>The engine evaluates musical <code class="docutils literal notranslate"><span class="pre">energy</span></code>, <code class="docutils literal notranslate"><span class="pre">tempo</span></code>, detected section (intro/verse/pre/chorus/drop), and history to avoid unwanted repetition.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>function select_scene(context):
     energy = context.energy
-    palette_actual = context.last_palette
-    ultima = context.last_scene
+    last_palette = context.last_palette
+    last_scene = context.last_scene
 
-    candidatas = escenas
+    candidates = scenes
         .filter(e.energy in [energy-1, energy+1])
-        .filter(e.palette != palette_actual)
-        .filter(e != ultima)
+        .filter(e.palette != last_palette)
+        .filter(e != last_scene)
 
     if energy &lt; 3:
-        candidatas = candidatas.filter(e.focus == &quot;wash&quot;)
+        candidates = candidates.filter(e.focus == &quot;wash&quot;)
 
     if context.is_drop:
-        candidatas = candidatas.filter(e.focus in [&quot;puntuales&quot;, &quot;special&quot;])
+        candidates = candidates.filter(e.focus in [&quot;accents&quot;, &quot;special&quot;])
 
     if context.strobe_allowed == false:
-        candidatas = candidatas.filter(e.strobe == &quot;none&quot;)
+        candidates = candidates.filter(e.strobe == &quot;none&quot;)
 
-    return choose_weighted_by_energy(candidatas)
+    return choose_weighted_by_energy(candidates)
 </pre></div>
 </div>
 </section>
