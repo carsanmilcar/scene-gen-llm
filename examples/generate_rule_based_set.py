@@ -1,4 +1,4 @@
-"""Genera múltiples escenas rule-based y las escribe a un .qxw en /generated."""
+"""Generate multiple rule-based scenes and write them to a .qxw in /generated."""
 
 from __future__ import annotations
 

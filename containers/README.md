@@ -1,28 +1,28 @@
-# Contenedores
-Definiciones Docker para este proyecto:
+# Containers
+Docker definitions for this project:
 
-- Servidor web de QLC+ expuesto en el puerto 9999.
-- Servidor Ollama ligero expuesto en el puerto 11434.
+- QLC+ web server exposed on port 9999.
+- Lightweight Ollama server exposed on port 11434.
 
-## Uso rápido de Ollama desde PowerShell (host)
+## Quick Ollama usage from PowerShell (host)
 
-1) Descargar un modelo ligero (ej. `phi3:mini`):
+1) Download a small model (e.g. `phi3:mini`):
 ```powershell
 $pull = @{ name = "phi3:mini" } | ConvertTo-Json
 Invoke-RestMethod -Method Post -Uri http://localhost:11434/api/pull -ContentType "application/json" -Body $pull
 ```
-Habla con el contenedor vía `http://localhost:11434`; el modelo se guarda en `/root/.ollama` (volumen `ollama-data`). Tardará según conexión.
+Talk to the container via `http://localhost:11434`; the model is stored in `/root/.ollama` (volume `ollama-data`). Download time will vary based on your connection.
 
-2) Ver modelos disponibles:
+2) List available models:
 ```powershell
 Invoke-RestMethod -Method Get -Uri http://localhost:11434/api/tags
 ```
 
-3) Probar generación:
+3) Test generation:
 ```powershell
 $gen = @{
   model  = "phi3:mini"
-  prompt = "Di una frase breve para confirmar que Ollama en Docker funciona."
+  prompt = "Say a short sentence to confirm that Ollama in Docker works."
 } | ConvertTo-Json
 
 Invoke-RestMethod -Method Post -Uri http://localhost:11434/api/generate -ContentType "application/json" -Body $gen

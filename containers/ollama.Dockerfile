@@ -1,7 +1,7 @@
 # Imagen base de Ollama
 FROM ollama/ollama:latest
 
-# TODO: Añadir modelos por defecto o configuración adicional.
+# TODO: Add default models or extra configuration.
 
 EXPOSE 11434
 

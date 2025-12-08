@@ -27,7 +27,7 @@ def generate_scenes_for_song(
 ) -> SceneSet:
     """Generate a SceneSet using rules (if context provided) or the LLM fallback."""
 
-    # Ruta basada en reglas si se aporta contexto.
+    # Rule-based path if a single context is provided.
     if scene_context is not None:
         rule_based = _generate_from_catalog(
             rig=rig,
@@ -39,7 +39,7 @@ def generate_scenes_for_song(
         if rule_based:
             return rule_based
 
-    # Ruta basada en reglas para múltiples contextos (varias escenas en un SceneSet).
+    # Rule-based path for multiple contexts (multiple scenes in a SceneSet).
     if scene_contexts:
         rule_based_set = _generate_multiple_from_catalog(
             rig=rig,
@@ -129,17 +129,17 @@ def _generate_from_catalog(
     )
 
     if not catalog_file.exists():
-        logger.warning("Catálogo de escenas no encontrado en %s", catalog_file)
+        logger.warning("Scene catalog not found at %s", catalog_file)
         return None
 
     catalog = load_scene_catalog(catalog_file)
     if not catalog:
-        logger.warning("Catálogo vacío; se usará fallback LLM")
+        logger.warning("Empty catalog; LLM fallback will be used")
         return None
 
     selected = select_scene(context, catalog)
     if not selected:
-        logger.warning("No se pudo seleccionar escena; se usará fallback LLM")
+        logger.warning("Could not select scene; LLM fallback will be used")
         return None
 
     palettes = load_palettes(palettes_file) if palettes_file.exists() else {}
@@ -152,7 +152,7 @@ def _generate_from_catalog(
         fixture_categories=categories,
     )
     title = f"Generated for {rig.name} (rule-based)"
-    logger.info("Escena seleccionada por reglas: %s", selected.name)
+    logger.info("Scene selected by rules: %s", selected.name)
     return SceneSet(title=title, scenes=[scene_spec])
 
 
@@ -178,12 +178,12 @@ def _generate_multiple_from_catalog(
     )
 
     if not catalog_file.exists():
-        logger.warning("Catálogo de escenas no encontrado en %s", catalog_file)
+        logger.warning("Scene catalog not found at %s", catalog_file)
         return None
 
     catalog = load_scene_catalog(catalog_file)
     if not catalog:
-        logger.warning("Catálogo vacío; se usará fallback LLM")
+        logger.warning("Empty catalog; LLM fallback will be used")
         return None
 
     palettes = load_palettes(palettes_file) if palettes_file.exists() else {}
@@ -194,7 +194,7 @@ def _generate_multiple_from_catalog(
     last_scene: str | None = None
 
     for ctx in contexts:
-        # Propaga last_* si no vienen en contexto para evitar repeticiones no deseadas.
+        # Propagate last_* when missing in context to avoid unwanted repetitions.
         if ctx.last_palette is None:
             ctx.last_palette = last_palette
         if ctx.last_scene is None:
@@ -202,7 +202,7 @@ def _generate_multiple_from_catalog(
 
         selected = select_scene(ctx, catalog)
         if not selected:
-            logger.warning("Sin selección para contexto %s", ctx)
+            logger.warning("No selection for context %s", ctx)
             continue
 
         scene_spec = apply_scene(
@@ -216,11 +216,11 @@ def _generate_multiple_from_catalog(
         last_scene = selected.name
 
     if not scenes:
-        logger.warning("No se generaron escenas con los contextos proporcionados")
+        logger.warning("No scenes were generated with the provided contexts")
         return None
 
     title = f"Generated for {rig.name} (rule-based batch)"
-    logger.info("Escenas seleccionadas por reglas (batch): %d", len(scenes))
+    logger.info("Scenes selected by rules (batch): %d", len(scenes))
     return SceneSet(title=title, scenes=scenes)
 
 

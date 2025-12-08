@@ -1,1 +1,1 @@
-Ejemplos de archivos .qxw de QLC+ y usos del generador irán aquí.
+Examples of QLC+ .qxw files and generator usage will go here.

@@ -1,130 +1,130 @@
-# Metodología de Creación y Selección de Escenas (SynkroDMX)
+# Scene Creation and Selection Methodology (SynkroDMX)
 
-Esta guía describe cómo SynkroDMX genera y selecciona escenas lumínicas a partir de la energía y estructura musical. El objetivo es ofrecer un proceso reproducible y extensible que mantenga jerarquía visual, variedad controlada y uso prudente de efectos agresivos. Aquí se explica por qué existen las categorías de fixtures, qué significa una “escena” en términos semánticos y cómo decide el motor qué activar en cada momento.
+This guide describes how SynkroDMX generates and selects lighting scenes based on musical energy and structure. The goal is to provide a reproducible, extensible process that preserves visual hierarchy, controlled variety, and careful use of aggressive effects. It explains why fixture categories exist, what a "scene" means in semantic terms, and how the engine decides what to activate at any moment.
 
-## 1. Introducción
+## 1. Introduction
 
-La metodología está diseñada para rigs mixtos (wash, puntuales y efectos) y se basa en prácticas habituales de directo: separar funciones de los dispositivos, construir “looks” reutilizables y activar efectos solo en momentos clave. Se prioriza claridad visual, jerarquía entre capas, compatibilidad con detección automática de tempo/secciones y un uso moderado de efectos agresivos.
+The methodology is designed for mixed rigs (wash, spots, and effects) and follows common live-show practices: separating device functions, building reusable looks, and triggering effects only at key moments. It prioritizes visual clarity, hierarchy between layers, compatibility with automatic tempo/section detection, and a moderate use of aggressive effects.
 
-## 2. Clasificación funcional de los dispositivos
+## 2. Functional classification of fixtures
 
-Cada fixture se asigna a una categoría que determina su rol principal dentro del show:
+Each fixture is assigned to a category that determines its main role in the show:
 
-### 2.1. Principales (Wash)
+### 2.1. Primaries (Wash)
 
-Generan la atmósfera base: color uniforme y estabilidad constante.
+Create the base atmosphere: uniform color and steady presence.
 
-- Ejemplos: Barras LED, VDPLPS36B2 (#01–#12).
-- Funciones: fondo de color según `palette`, chases suaves o transiciones lentas, nivel mínimo de iluminación siempre presente.
+- Examples: LED bars, VDPLPS36B2 (#01-#12).
+- Functions: background color from `palette`, soft chases or slow fades, minimal lighting always present.
 
-### 2.2. Puntuales (Acento)
+### 2.2. Spots (Accent)
 
-Alta potencia o presencia visual para momentos destacados.
+High power or visual presence for highlighted moments.
 
-- Ejemplos: Dallas 180 MK2 (#1–#4), VDPL110CC LED Tri Spot.
-- Funciones: golpes rítmicos (hits), flashes en drops, cambios de color dirigidos, refuerzo en subidas de `energy`.
+- Examples: Dallas 180 MK2 (#1-#4), VDPL110CC LED Tri Spot.
+- Functions: rhythmic hits, flashes on drops, directed color changes, reinforcement during `energy` rises.
 
-### 2.3. Especiales (Efecto)
+### 2.3. Specials (Effect)
 
-Alteran fuertemente la percepción visual; se usan con moderación.
+Strongly alter visual perception; used sparingly.
 
-- Ejemplo: Cameo Superfly XS.
-- Funciones: rellenar el espacio con patrones dinámicos, crear momentos “wow”, escenas de alta `energy`.
+- Example: Cameo Superfly XS.
+- Functions: fill the space with dynamic patterns, create "wow" moments, high-`energy` scenes.
 
-## 3. Taxonomía de escenas (“Scene Model”)
+## 3. Scene taxonomy ("Scene Model")
 
-Una escena se define por parámetros semánticos, independientes de valores DMX concretos. Esto permite seleccionar inteligentemente sin conocer aún la salida por fixture.
+A scene is defined by semantic parameters, independent of specific DMX values. This enables smart selection without yet knowing per-fixture output.
 
-### 3.1. Parámetros principales
+### 3.1. Main parameters
 
-- `energy` (1–5): 1 = muy suave; 5 = extremadamente intensa.
-- `palette`: conjuntos base, p.ej. `warm`, `cool`, `neutral`, `mono_blue`, `rainbow`.
-- `motion`: `static`, `slow`, `medium`, `fast`; define velocidad de chases/transiciones.
-- `strobe`: `none`, `soft`, `hard`; controla permiso e intensidad de estrobo.
-- `focus`: categoría protagonista: `wash`, `puntuales`, `special`, `mixed`.
+- `energy` (1-5): 1 = very soft; 5 = extremely intense.
+- `palette`: base sets, e.g., `warm`, `cool`, `neutral`, `mono_blue`, `rainbow`.
+- `motion`: `static`, `slow`, `medium`, `fast`; defines chase/transition speed.
+- `strobe`: `none`, `soft`, `hard`; controls permission and intensity of strobe.
+- `focus`: leading category: `wash`, `puntuales` (spots), `special`, `mixed`.
 
-## 4. Diseño de escenas base (“Core Looks”)
+## 4. Core look design
 
-Catálogo limitado de escenas canónicas que sirven como look directo o base para variaciones.
+Limited catalog of canonical scenes that serve as direct looks or bases for variations.
 
-### 4.1. Escenas de Wash (principales)
+### 4.1. Wash scenes (primaries)
 
 - `wash_warm_soft`: `energy`=1, `palette`=`warm`, `motion`=`static`.
-- `wash_cool_soft`: `energy`=1–2, `palette`=`cool`.
+- `wash_cool_soft`: `energy`=1-2, `palette`=`cool`.
 - `wash_white_intense`: `energy`=3, `palette`=`neutral`.
-- `wash_dual_split`: mitad `warm` / mitad `cool`, `motion`=`slow`.
+- `wash_dual_split`: half `warm` / half `cool`, `motion`=`slow`.
 
-### 4.2. Escenas con puntuales
+### 4.2. Scenes with spots
 
-- `accent_hit`: puntuales dan golpes breves, principales suaves, `energy`=3–4.
-- `puntuales_fade_color`: transiciones lentas en puntuales sobre wash estático.
-- `puntuales_sync_beats`: encendido en beats seleccionados (p.ej. 1 y 3).
+- `accent_hit`: spots deliver short hits, primaries soft, `energy`=3-4.
+- `puntuales_fade_color`: slow transitions on spots over static wash.
+- `puntuales_sync_beats`: turned on for selected beats (e.g., 1 and 3).
 
-### 4.3. Escenas especiales
+### 4.3. Special scenes
 
-- `superfly_auto_slow`: efecto suave, `energy`=3.
-- `superfly_auto_fast`: alto movimiento, `energy`=5.
-- `superparty_full_rig`: para picos energéticos; Superfly + puntuales + principales en chase rápido.
+- `superfly_auto_slow`: gentle effect, `energy`=3.
+- `superfly_auto_fast`: high movement, `energy`=5.
+- `superparty_full_rig`: for energy peaks; Superfly + spots + primaries in a fast chase.
 
-## 5. Reglas de aplicación según la música
+## 5. Application rules based on the music
 
-La escena se deriva de características musicales en tiempo real.
+The scene is derived from musical characteristics in real time.
 
-### 5.1. Por nivel de energía musical
+### 5.1. By musical energy level
 
-- `energy` 1–2 (intro, versos suaves, outro): escenas `focus`=`wash`; sin `strobe`; puntuales apagados o discretos; especiales prohibidos.
-- `energy` 3 (verso fuerte, buildup suave): wash + puntuales leves; algún `motion` lento; `strobe` solo si `soft`.
-- `energy` 4–5 (estribillo, drop, picos): activar puntuales como acento; permitir Superfly; chases rápidos; `strobe` moderado (`soft`) o `hard` solo en momentos clave.
+- `energy` 1-2 (intro, soft verses, outro): scenes with `focus`=`wash`; no `strobe`; spots off or subtle; specials forbidden.
+- `energy` 3 (strong verse, gentle buildup): wash + light spots; some slow `motion`; `strobe` only if `soft`.
+- `energy` 4-5 (chorus, drop, peaks): activate spots as accent; allow Superfly; fast chases; moderate `strobe` (`soft`) or `hard` only at key moments.
 
-## 6. Reglas adicionales de variedad y control
+## 6. Additional variety and control rules
 
-Evitan saturación y preservan coherencia.
+Avoid saturation and preserve coherence.
 
-- `palette`: no repetir la misma más de dos escenas seguidas.
-- `strobe`: no encadenar escenas con `strobe`=`hard`; no mantener estrobo más de X segundos (parametrizable).
-- Especiales: Superfly solo si `energy` ≥ 4 y apagado tras ≤ Y segundos salvo casos especiales.
-- Puntuales: no permanecen encendidos de forma continua; solo hits rítmicos o efectos breves.
+- `palette`: do not repeat the same one more than two scenes in a row.
+- `strobe`: do not chain scenes with `strobe`=`hard`; do not keep strobe active for more than X seconds (configurable).
+- Specials: Superfly only if `energy` >= 4 and turned off after Y seconds unless exceptional.
+- Spots: should not remain on continuously; only rhythmic hits or short effects.
 
-## 7. Algoritmo de selección de escenas
+## 7. Scene selection algorithm
 
-El motor evalúa `energy` musical, `tempo`, sección detectada (intro/verse/pre/chorus/drop) y el historial para evitar repeticiones indeseadas.
+The engine evaluates musical `energy`, `tempo`, detected section (intro/verse/pre/chorus/drop), and history to avoid unwanted repetition.
 
 ```pseudo
-function seleccionar_escena(context):
+function select_scene(context):
     energy = context.energy
-    palette_actual = context.last_palette
-    ultima = context.last_scene
+    current_palette = context.last_palette
+    last = context.last_scene
 
-    candidatas = escenas
-        .filter(e.energy ∈ [energy-1, energy+1])
-        .filter(e.palette != palette_actual)
-        .filter(e != ultima)
+    candidates = scenes
+        .filter(e.energy in [energy-1, energy+1])
+        .filter(e.palette != current_palette)
+        .filter(e != last)
 
     if energy < 3:
-        candidatas = candidatas.filter(e.focus == "wash")
+        candidates = candidates.filter(e.focus == "wash")
 
     if context.is_drop:
-        candidatas = candidatas.filter(e.focus in ["puntuales", "special"])
+        candidates = candidates.filter(e.focus in ["puntuales", "special"])
 
     if context.strobe_allowed == false:
-        candidatas = candidatas.filter(e.strobe == "none")
+        candidates = candidates.filter(e.strobe == "none")
 
-    return elegir_probabilisticamente(candidatas)
+    return choose_probabilistically(candidates)
 ```
 
-## 8. Traducción de escena → valores DMX
+## 8. Scene translation to DMX values
 
-Una vez seleccionada la escena semántica:
+Once the semantic scene is selected:
 
-- Cargar definición base para principales, puntuales y especiales.
-- Aplicar `palette` y `motion`.
-- Ajustar efectos (`strobe`, Superfly) según `strobe`, `motion` y `energy`.
-- Enviar valores DMX por fixture según su diccionario de canales.
+- Load base definition for primaries, spots, and specials.
+- Apply `palette` and `motion`.
+- Adjust effects (`strobe`, Superfly) according to `strobe`, `motion`, and `energy`.
+- Send DMX values per fixture according to its channel dictionary.
 
-## 9. Ventajas de esta metodología
+## 9. Benefits of this methodology
 
-- Escalable a nuevos fixtures.
-- Fácil de depurar.
-- Separa la lógica musical de la buena programación lumínica.
-- Produce shows coherentes y variados sin intervención manual.
-- Compatible con rigs small/medium de directo.
+- Scales to new fixtures.
+- Easy to debug.
+- Separates musical logic from good lighting programming.
+- Produces coherent and varied shows without manual intervention.
+- Compatible with small/medium live rigs.
