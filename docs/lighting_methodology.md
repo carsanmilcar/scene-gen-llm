@@ -89,7 +89,7 @@ Evitan saturación y preservan coherencia.
 
 El motor evalúa `energy` musical, `tempo`, sección detectada (intro/verse/pre/chorus/drop) y el historial para evitar repeticiones indeseadas.
 
-```pseudo
+```text
 function seleccionar_escena(context):
     energy = context.energy
     palette_actual = context.last_palette
