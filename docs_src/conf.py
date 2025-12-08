@@ -27,7 +27,7 @@ extensions = [
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
-language = "es"
+language = "en"
 source_suffix = {".rst": "restructuredtext", ".md": "markdown"}
 myst_enable_extensions = ["colon_fence", "deflist"]
 myst_heading_anchors = 3

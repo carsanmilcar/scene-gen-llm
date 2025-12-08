@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Quickstart &#8212; scene-gen-llm 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=7026087e"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Scene Creation and Selection Methodology (SynkroDMX)" href="lighting_methodology.html" />
+    <link rel="prev" title="scene-gen-llm" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="quickstart">
+<h1>Quickstart<a class="headerlink" href="#quickstart" title="Link to this heading">¶</a></h1>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Python 3.9 or newer</p></li>
+<li><p>QLC+ installed to test <code class="docutils literal notranslate"><span class="pre">.qxw</span></code> files</p></li>
+<li><p>Optional: virtual environment (<code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">venv</span> <span class="pre">.venv</span></code>)</p></li>
+</ul>
+</section>
+<section id="install-the-project">
+<h2>Install the project<a class="headerlink" href="#install-the-project" title="Link to this heading">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+.venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>pip
+python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+</pre></div>
+</div>
+</section>
+<section id="run-the-generator">
+<h2>Run the generator<a class="headerlink" href="#run-the-generator" title="Link to this heading">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>scenegen.cli<span class="w"> </span>scene1.qxw<span class="w"> </span><span class="s2">&quot;Describe the song vibe&quot;</span><span class="w"> </span>--output<span class="w"> </span>scene1_generated.qxw
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">workspace</span></code>: source <code class="docutils literal notranslate"><span class="pre">.qxw</span></code> file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">description</span></code>: free text sent to the LLM to generate scenes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--output</span></code>: path where the workspace with new scenes will be written; defaults to <code class="docutils literal notranslate"><span class="pre">&lt;workspace&gt;_generated.qxw</span></code>.</p></li>
+</ul>
+<p>The pipeline first tries the rule-based selector if a <code class="docutils literal notranslate"><span class="pre">SceneContext</span></code> is provided. If the catalog is missing or rules cannot pick a scene, it falls back to the LLM and finally to a deterministic placeholder.</p>
+</section>
+<section id="build-the-documentation-for-github-pages">
+<h2>Build the documentation (for GitHub Pages)<a class="headerlink" href="#build-the-documentation-for-github-pages" title="Link to this heading">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>docs_src/requirements.txt
+python<span class="w"> </span>-m<span class="w"> </span>sphinx<span class="w"> </span>-b<span class="w"> </span>html<span class="w"> </span>docs_src<span class="w"> </span>docs
+</pre></div>
+</div>
+<p>Open <code class="docutils literal notranslate"><span class="pre">docs/index.html</span></code> in your browser (GitHub Pages can now point directly to the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> folder).</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">scene-gen-llm</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quickstart</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-the-project">Install the project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run-the-generator">Run the generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#build-the-documentation-for-github-pages">Build the documentation (for GitHub Pages)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lighting_methodology.html">Scene Creation and Selection Methodology (SynkroDMX)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">scene-gen-llm</a></li>
+      <li>Next: <a href="lighting_methodology.html" title="next chapter">Scene Creation and Selection Methodology (SynkroDMX)</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/quickstart.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

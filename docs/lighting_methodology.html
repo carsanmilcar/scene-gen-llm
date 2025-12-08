@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Scene Creation and Selection Methodology (SynkroDMX) &#8212; scene-gen-llm 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=7026087e"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API Reference" href="api.html" />
+    <link rel="prev" title="Quickstart" href="quickstart.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="scene-creation-and-selection-methodology-synkrodmx">
+<h1>Scene Creation and Selection Methodology (SynkroDMX)<a class="headerlink" href="#scene-creation-and-selection-methodology-synkrodmx" title="Link to this heading">¶</a></h1>
+<p>This guide explains how SynkroDMX builds and selects lighting scenes from musical energy and structure. The goal is a repeatable, extensible process that keeps visual hierarchy, controlled variety, and prudent use of aggressive effects. It describes fixture categories, what a <em>semantic scene</em> means, and how the engine decides what to activate at each moment.</p>
+<section id="introduction">
+<h2>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
+<p>The methodology is designed for mixed rigs (wash, spots, and effects) and borrows common live-show practices: separate device roles, build reusable looks, and trigger effects only at key moments. It prioritizes visual clarity, hierarchy between layers, compatibility with automatic tempo/section detection, and moderate use of harsh effects.</p>
+</section>
+<section id="functional-fixture-classification">
+<h2>2. Functional fixture classification<a class="headerlink" href="#functional-fixture-classification" title="Link to this heading">¶</a></h2>
+<p>Each fixture is assigned a category that defines its main role in the show:</p>
+<section id="primaries-wash">
+<h3>2.1. Primaries (Wash)<a class="headerlink" href="#primaries-wash" title="Link to this heading">¶</a></h3>
+<p>Provide the base atmosphere: uniform color and steady presence.</p>
+<ul class="simple">
+<li><p>Examples: LED bars, VDPLPS36B2 (#01–#12).</p></li>
+<li><p>Functions: background color per <code class="docutils literal notranslate"><span class="pre">palette</span></code>, soft chases or slow fades, minimum light always present.</p></li>
+</ul>
+</section>
+<section id="accents-spots">
+<h3>2.2. Accents (Spots)<a class="headerlink" href="#accents-spots" title="Link to this heading">¶</a></h3>
+<p>High punch or visual presence for featured moments.</p>
+<ul class="simple">
+<li><p>Examples: Dallas 180 MK2 (#1–#4), VDPL110CC LED Tri Spot.</p></li>
+<li><p>Functions: rhythmic hits, flashes on drops, targeted color changes, reinforcement when <code class="docutils literal notranslate"><span class="pre">energy</span></code> rises.</p></li>
+</ul>
+</section>
+<section id="specials-effects">
+<h3>2.3. Specials (Effects)<a class="headerlink" href="#specials-effects" title="Link to this heading">¶</a></h3>
+<p>Strongly alter the visual perception; used sparingly.</p>
+<ul class="simple">
+<li><p>Example: Cameo Superfly XS.</p></li>
+<li><p>Functions: fill space with dynamic patterns, create “wow” moments, high-<code class="docutils literal notranslate"><span class="pre">energy</span></code> looks.</p></li>
+</ul>
+</section>
+</section>
+<section id="scene-taxonomy-semantic-scene-model">
+<h2>3. Scene taxonomy (Semantic Scene Model)<a class="headerlink" href="#scene-taxonomy-semantic-scene-model" title="Link to this heading">¶</a></h2>
+<p>A scene is defined by semantic parameters, independent of specific DMX values. This allows intelligent selection without knowing fixture outputs beforehand.</p>
+<section id="core-parameters">
+<h3>3.1. Core parameters<a class="headerlink" href="#core-parameters" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">energy</span></code> (1–5): 1 = very soft; 5 = extremely intense.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">palette</span></code>: base sets, e.g., <code class="docutils literal notranslate"><span class="pre">warm</span></code>, <code class="docutils literal notranslate"><span class="pre">cool</span></code>, <code class="docutils literal notranslate"><span class="pre">neutral</span></code>, <code class="docutils literal notranslate"><span class="pre">mono_blue</span></code>, <code class="docutils literal notranslate"><span class="pre">rainbow</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">motion</span></code>: <code class="docutils literal notranslate"><span class="pre">static</span></code>, <code class="docutils literal notranslate"><span class="pre">slow</span></code>, <code class="docutils literal notranslate"><span class="pre">medium</span></code>, <code class="docutils literal notranslate"><span class="pre">fast</span></code>; defines chase/transition speed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">strobe</span></code>: <code class="docutils literal notranslate"><span class="pre">none</span></code>, <code class="docutils literal notranslate"><span class="pre">soft</span></code>, <code class="docutils literal notranslate"><span class="pre">hard</span></code>; controls permission and intensity of strobe.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">focus</span></code>: leading category: <code class="docutils literal notranslate"><span class="pre">wash</span></code>, <code class="docutils literal notranslate"><span class="pre">puntuales</span></code>, <code class="docutils literal notranslate"><span class="pre">special</span></code>, <code class="docutils literal notranslate"><span class="pre">mixed</span></code>.</p></li>
+</ul>
+</section>
+</section>
+<section id="canonical-base-scenes-core-looks">
+<h2>4. Canonical base scenes (Core Looks)<a class="headerlink" href="#canonical-base-scenes-core-looks" title="Link to this heading">¶</a></h2>
+<p>A limited catalog of canonical scenes that act as direct looks or bases for variations.</p>
+<section id="wash-scenes-primaries">
+<h3>4.1. Wash scenes (primaries)<a class="headerlink" href="#wash-scenes-primaries" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">wash_warm_soft</span></code>: <code class="docutils literal notranslate"><span class="pre">energy</span></code>=1, <code class="docutils literal notranslate"><span class="pre">palette</span></code>=<code class="docutils literal notranslate"><span class="pre">warm</span></code>, <code class="docutils literal notranslate"><span class="pre">motion</span></code>=<code class="docutils literal notranslate"><span class="pre">static</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">wash_cool_soft</span></code>: <code class="docutils literal notranslate"><span class="pre">energy</span></code>=1–2, <code class="docutils literal notranslate"><span class="pre">palette</span></code>=<code class="docutils literal notranslate"><span class="pre">cool</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">wash_white_intense</span></code>: <code class="docutils literal notranslate"><span class="pre">energy</span></code>=3, <code class="docutils literal notranslate"><span class="pre">palette</span></code>=<code class="docutils literal notranslate"><span class="pre">neutral</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">wash_dual_split</span></code>: half <code class="docutils literal notranslate"><span class="pre">warm</span></code> / half <code class="docutils literal notranslate"><span class="pre">cool</span></code>, <code class="docutils literal notranslate"><span class="pre">motion</span></code>=<code class="docutils literal notranslate"><span class="pre">slow</span></code>.</p></li>
+</ul>
+</section>
+<section id="scenes-with-accents">
+<h3>4.2. Scenes with accents<a class="headerlink" href="#scenes-with-accents" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">accent_hit</span></code>: accents deliver brief hits, primaries stay soft, <code class="docutils literal notranslate"><span class="pre">energy</span></code>=3–4.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">puntuales_fade_color</span></code>: slow transitions on accents over static wash.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">puntuales_sync_beats</span></code>: on selected beats (e.g., 1 and 3).</p></li>
+</ul>
+</section>
+<section id="specials">
+<h3>4.3. Specials<a class="headerlink" href="#specials" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">superfly_auto_slow</span></code>: gentle effect, <code class="docutils literal notranslate"><span class="pre">energy</span></code>=3.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">superfly_auto_fast</span></code>: high movement, <code class="docutils literal notranslate"><span class="pre">energy</span></code>=5.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">superparty_full_rig</span></code>: for energy peaks; Superfly + accents + primaries in fast chase.</p></li>
+</ul>
+</section>
+</section>
+<section id="rules-by-musical-context">
+<h2>5. Rules by musical context<a class="headerlink" href="#rules-by-musical-context" title="Link to this heading">¶</a></h2>
+<p>The scene derives from musical characteristics in real time.</p>
+<section id="by-energy-level">
+<h3>5.1. By energy level<a class="headerlink" href="#by-energy-level" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">energy</span></code> 1–2 (intro, soft verses, outro): scenes with <code class="docutils literal notranslate"><span class="pre">focus</span></code>=<code class="docutils literal notranslate"><span class="pre">wash</span></code>; no <code class="docutils literal notranslate"><span class="pre">strobe</span></code>; accents off or minimal; specials forbidden.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">energy</span></code> 3 (strong verse, mild buildup): wash + light accents; some slow <code class="docutils literal notranslate"><span class="pre">motion</span></code>; <code class="docutils literal notranslate"><span class="pre">strobe</span></code> only if <code class="docutils literal notranslate"><span class="pre">soft</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">energy</span></code> 4–5 (chorus, drop, peaks): enable accents as hits; allow Superfly; fast chases; <code class="docutils literal notranslate"><span class="pre">strobe</span></code> moderate (<code class="docutils literal notranslate"><span class="pre">soft</span></code>) or <code class="docutils literal notranslate"><span class="pre">hard</span></code> only for key moments.</p></li>
+</ul>
+</section>
+</section>
+<section id="variety-and-control-rules">
+<h2>6. Variety and control rules<a class="headerlink" href="#variety-and-control-rules" title="Link to this heading">¶</a></h2>
+<p>These keep saturation in check and preserve coherence.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">palette</span></code>: do not repeat the same palette for more than two scenes in a row.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">strobe</span></code>: avoid chaining <code class="docutils literal notranslate"><span class="pre">strobe</span></code>=<code class="docutils literal notranslate"><span class="pre">hard</span></code>; do not keep strobe active beyond X seconds (configurable).</p></li>
+<li><p>Specials: Superfly only if <code class="docutils literal notranslate"><span class="pre">energy</span></code> ≥ 4 and turned off after Y seconds unless exceptional.</p></li>
+<li><p>Accents: avoid staying on continuously; only rhythmic hits or short effects.</p></li>
+</ul>
+</section>
+<section id="scene-selection-algorithm">
+<h2>7. Scene selection algorithm<a class="headerlink" href="#scene-selection-algorithm" title="Link to this heading">¶</a></h2>
+<p>The engine evaluates musical <code class="docutils literal notranslate"><span class="pre">energy</span></code>, <code class="docutils literal notranslate"><span class="pre">tempo</span></code>, detected section (intro/verse/pre/chorus/drop), and history to avoid unwanted repetition.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>function select_scene(context):
+    energy = context.energy
+    palette_actual = context.last_palette
+    ultima = context.last_scene
+
+    candidatas = escenas
+        .filter(e.energy in [energy-1, energy+1])
+        .filter(e.palette != palette_actual)
+        .filter(e != ultima)
+
+    if energy &lt; 3:
+        candidatas = candidatas.filter(e.focus == &quot;wash&quot;)
+
+    if context.is_drop:
+        candidatas = candidatas.filter(e.focus in [&quot;puntuales&quot;, &quot;special&quot;])
+
+    if context.strobe_allowed == false:
+        candidatas = candidatas.filter(e.strobe == &quot;none&quot;)
+
+    return choose_weighted_by_energy(candidatas)
+</pre></div>
+</div>
+</section>
+<section id="mapping-semantic-scene-to-dmx">
+<h2>8. Mapping semantic scene to DMX<a class="headerlink" href="#mapping-semantic-scene-to-dmx" title="Link to this heading">¶</a></h2>
+<p>Once the semantic scene is selected:</p>
+<ul class="simple">
+<li><p>Load base definitions for primaries, accents, and specials.</p></li>
+<li><p>Apply <code class="docutils literal notranslate"><span class="pre">palette</span></code> and <code class="docutils literal notranslate"><span class="pre">motion</span></code>.</p></li>
+<li><p>Adjust effects (<code class="docutils literal notranslate"><span class="pre">strobe</span></code>, Superfly) according to <code class="docutils literal notranslate"><span class="pre">strobe</span></code>, <code class="docutils literal notranslate"><span class="pre">motion</span></code>, and <code class="docutils literal notranslate"><span class="pre">energy</span></code>.</p></li>
+<li><p>Send DMX values per fixture based on its channel map.</p></li>
+</ul>
+</section>
+<section id="benefits">
+<h2>9. Benefits<a class="headerlink" href="#benefits" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Scales to new fixtures.</p></li>
+<li><p>Easy to debug.</p></li>
+<li><p>Separates musical logic from good lighting programming.</p></li>
+<li><p>Produces coherent, varied shows without manual intervention.</p></li>
+<li><p>Works well on small/medium live rigs.</p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">scene-gen-llm</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Scene Creation and Selection Methodology (SynkroDMX)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#functional-fixture-classification">2. Functional fixture classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scene-taxonomy-semantic-scene-model">3. Scene taxonomy (Semantic Scene Model)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#canonical-base-scenes-core-looks">4. Canonical base scenes (Core Looks)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rules-by-musical-context">5. Rules by musical context</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variety-and-control-rules">6. Variety and control rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scene-selection-algorithm">7. Scene selection algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mapping-semantic-scene-to-dmx">8. Mapping semantic scene to DMX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#benefits">9. Benefits</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="quickstart.html" title="previous chapter">Quickstart</a></li>
+      <li>Next: <a href="api.html" title="next chapter">API Reference</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/lighting_methodology.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

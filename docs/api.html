@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 
-<html lang="es" data-content_root="./">
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Referencia de API &#8212; documentación de scene-gen-llm - 0.0.0</title>
+    <title>API Reference &#8212; scene-gen-llm 0.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
-    <script src="_static/documentation_options.js?v=cbb49432"></script>
+    <script src="_static/documentation_options.js?v=7026087e"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/translations.js?v=f85f4cfb"></script>
-    <link rel="index" title="Índice" href="genindex.html" />
-    <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="prev" title="Metodología de Creación y Selección de Escenas (SynkroDMX)" href="lighting_methodology.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Scene Creation and Selection Methodology (SynkroDMX)" href="lighting_methodology.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -33,9 +32,9 @@
 
           <div class="body" role="main">
             
-  <section id="referencia-de-api">
-<h1>Referencia de API<a class="headerlink" href="#referencia-de-api" title="Link to this heading">¶</a></h1>
-<p>Esta sección resume los módulos principales usados en la generación y escritura de escenas.</p>
+  <section id="api-reference">
+<h1>API Reference<a class="headerlink" href="#api-reference" title="Link to this heading">¶</a></h1>
+<p>Summary of the main modules used to generate and write scenes.</p>
 <section id="entrada-y-salida-de-qlc">
 <h2>Entrada y salida de QLC+<a class="headerlink" href="#entrada-y-salida-de-qlc" title="Link to this heading">¶</a></h2>
 <p>.. py:module:: scenegen.qlc_io</p>
@@ -43,7 +42,7 @@
 <p>.. py:function:: load_rig_from_qlc(path)
 :module: scenegen.qlc_io</p>
 <p>Load a rig definition from a QLC+ workspace (.qxw).</p>
-<p>.. py:function:: write_scenes_to_qlc(path, rig, scenes, output_path=None, create_show=False, show_name=”Generated Show”, show_step_ms=5000, create_flash_chaser=False, flash_chaser_name=”Flash White”, flash_step_ms=100, flash_total_ms=300000, create_primary_sweep=False, primary_sweep_name=”Blue Sweep”, primary_sweep_step_ms=500)
+<p>.. py:function:: write_scenes_to_qlc(path, rig, scenes, output_path=None, create_show=False, show_name=’Generated Show’, show_step_ms=5000, create_flash_chaser=False, flash_chaser_name=’Flash White’, flash_step_ms=100, flash_total_ms=300000, create_primary_sweep=False, primary_sweep_name=’Blue Sweep’, primary_sweep_step_ms=500)
 :module: scenegen.qlc_io</p>
 <p>Append generated scenes to a QLC+ workspace.</p>
 <p>The original file is left untouched; by default the function writes to
@@ -53,7 +52,7 @@
 <h2>Modelado de rig y escenas<a class="headerlink" href="#modelado-de-rig-y-escenas" title="Link to this heading">¶</a></h2>
 <p>.. py:module:: scenegen.rig</p>
 <p>Data models to describe a QLC+ rig.</p>
-<p>.. py:class:: ChannelDef(index, name, channel_type=”generic”, default_value=None)
+<p>.. py:class:: ChannelDef(index, name, channel_type=’generic’, default_value=None)
 :module: scenegen.rig</p>
 <p>Describe a single channel inside a fixture.</p>
 <p>.. py:class:: FixtureDef(fixture_id, name, manufacturer, model, mode, universe, address, channels=<factory>)
@@ -94,7 +93,7 @@
 <p>Create a text prompt describing the rig and desired output schema.</p>
 <p>.. py:module:: scenegen.llm_client</p>
 <p>Lightweight client to talk to a local language model (e.g., Ollama).</p>
-<p>.. py:class:: LLMClient(base_url=”http://localhost:11434”, model=”phi3:mini”)
+<p>.. py:class:: LLMClient(base_url=’http://localhost:11434’, model=’phi3:mini’)
 :module: scenegen.llm_client</p>
 <p>Encapsulates calls to the configured LLM endpoint.</p>
 <p>.. py:method:: LLMClient.generate(prompt, max_tokens=1024)
@@ -165,16 +164,16 @@
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
-      <input type="submit" value="Ir a" />
+      <input type="submit" value="Go" />
     </form>
     </div>
 </search>
-<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navegación</h3>
-<p class="caption" role="heading"><span class="caption-text">Contenido</span></p>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Guía rápida</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lighting_methodology.html">Metodología de Creación y Selección de Escenas (SynkroDMX)</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Referencia de API</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lighting_methodology.html">Scene Creation and Selection Methodology (SynkroDMX)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#entrada-y-salida-de-qlc">Entrada y salida de QLC+</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#modelado-de-rig-y-escenas">Modelado de rig y escenas</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#motor-de-generacion">Motor de generación</a></li>
@@ -187,7 +186,7 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="lighting_methodology.html" title="capítulo anterior">Metodología de Creación y Selección de Escenas (SynkroDMX)</a></li>
+      <li>Previous: <a href="lighting_methodology.html" title="previous chapter">Scene Creation and Selection Methodology (SynkroDMX)</a></li>
   </ul></li>
 </ul>
 </div>

@@ -1,6 +1,6 @@
-# Referencia de API
+# API Reference
 
-Esta sección resume los módulos principales usados en la generación y escritura de escenas.
+Summary of the main modules used to generate and write scenes.
 
 ## Entrada y salida de QLC+
 ```{automodule} scenegen.qlc_io
