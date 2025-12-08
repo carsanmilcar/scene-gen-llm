@@ -1,7 +1,6 @@
 # Containers
-Docker definitions for this project:
+Docker definition for this project:
 
-- QLC+ web server exposed on port 9999.
 - Lightweight Ollama server exposed on port 11434.
 
 ## Quick Ollama usage from PowerShell (host)
