@@ -53,7 +53,12 @@ def generate_scenes_for_song(
 
     client = llm_client or LLMClient()
     prompt = build_prompt(rig, song_description)
-    raw_response = client.generate(prompt)
+    try:
+        raw_response = client.generate(prompt)
+    except RuntimeError as exc:
+        logger.warning("LLM call failed (%s); using fallback scenes", exc)
+        return _fallback_scene_set(rig, song_description)
+
     payload_text = _extract_payload_text(raw_response)
 
     if not payload_text:

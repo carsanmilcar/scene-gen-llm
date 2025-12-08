@@ -9,11 +9,11 @@ def build_prompt(rig: Rig, song_description: str) -> str:
     lines = [
         "You are a QLC+ lighting programmer.",
         "Generate a JSON payload with static scenes suited to the song description.",
-        "Each scene must follow this schema:",
-        "- title: string (overall title for the set)",
-        "- scenes: list of scenes with fields {name, scene_type (static|chase|cue), description, states}.",
-        "- states: list of objects {fixture_id: string, channel_values: {channel_name: 0-255}}.",
-        "Only output JSON. Do not add prose.",
+        "Output ONLY valid JSON; no prose, comments, ellipsis, or trailing text.",
+        "Schema:",
+        '- title: string',
+        '- scenes: array of { name: string, scene_type: "static"|"chase"|"cue", description: string, states: array }',
+        '- states: array of { fixture_id: string, channel_values: object mapping channel_name -> 0-255 integer }',
         "",
         "Rig fixtures:",
     ]

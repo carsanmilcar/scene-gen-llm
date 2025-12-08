@@ -8,6 +8,12 @@ Description-Content-Type: text/markdown
 # scene-gen-llm
 QLC+ scene generator powered by a language model.
 
+## Setup (local)
+
+```bash
+python -m pip install -e .
+```
+
 ## Quick start
 
 ```bash

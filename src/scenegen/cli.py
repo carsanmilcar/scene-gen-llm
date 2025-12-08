@@ -5,6 +5,7 @@ import logging
 from pathlib import Path
 
 from .generator import generate_scenes_for_song
+from .llm_client import LLMClient
 from .qlc_io import load_rig_from_qlc, write_scenes_to_qlc
 
 logger = logging.getLogger(__name__)
@@ -24,11 +25,22 @@ def main() -> None:
         help="Where to write the workspace with generated scenes (.qxw). "
         "Defaults to <workspace>_generated.qxw.",
     )
+    parser.add_argument(
+        "--llm-base-url",
+        default="http://localhost:11434",
+        help="Base URL for the LLM endpoint (e.g., http://ollama:11434).",
+    )
+    parser.add_argument(
+        "--llm-model",
+        default="phi3:mini",
+        help="Model name to request from the LLM endpoint.",
+    )
 
     args = parser.parse_args()
 
     rig = load_rig_from_qlc(args.workspace)
-    scene_set = generate_scenes_for_song(rig, args.description)
+    client = LLMClient(base_url=args.llm_base_url, model=args.llm_model)
+    scene_set = generate_scenes_for_song(rig, args.description, llm_client=client)
 
     target_path = args.output or str(
         Path(args.workspace).with_name(f"{Path(args.workspace).stem}_generated.qxw")
