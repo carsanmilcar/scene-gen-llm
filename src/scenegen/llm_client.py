@@ -48,7 +48,13 @@ class LLMClient:
         try:
             with urllib.request.urlopen(request, timeout=300) as response:
                 body = response.read().decode("utf-8")
-        except (urllib.error.HTTPError, urllib.error.URLError, socket.timeout, TimeoutError) as exc:
+        except (
+            urllib.error.HTTPError,
+            urllib.error.URLError,
+            socket.timeout,
+            TimeoutError,
+            ConnectionError,
+        ) as exc:
             raise RuntimeError(f"LLM request failed: {exc}") from exc
 
         try:
