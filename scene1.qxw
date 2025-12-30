@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="ShowManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.14.3</Version>
-  <Author>barko</Author>
+  <Author>CARLOS SAN MILLAN CARPINTERO</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
@@ -15,9 +15,9 @@
    <Universe Name="Universe 4" ID="3"/>
   </InputOutputMap>
   <Fixture>
-   <Manufacturer>HQPower</Manufacturer>
-   <Model>VDPLPS36B2</Model>
-   <Mode>5-ch Effect+RGB</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>5 Channel</Mode>
    <ID>0</ID>
    <Name>Barras LED</Name>
    <Universe>0</Universe>
@@ -25,9 +25,9 @@
    <Channels>5</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>HQPower</Manufacturer>
-   <Model>VDPLPS36B2</Model>
-   <Mode>3-ch RGB</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>3 Channel</Mode>
    <ID>1</ID>
    <Name>VDPLPS36B2 #01</Name>
    <Universe>0</Universe>
@@ -35,9 +35,9 @@
    <Channels>3</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>HQPower</Manufacturer>
-   <Model>VDPLPS36B2</Model>
-   <Mode>3-ch RGB</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>3 Channel</Mode>
    <ID>2</ID>
    <Name>VDPLPS36B2 #02</Name>
    <Universe>0</Universe>
@@ -45,9 +45,9 @@
    <Channels>3</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>HQPower</Manufacturer>
-   <Model>VDPLPS36B2</Model>
-   <Mode>3-ch RGB</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>3 Channel</Mode>
    <ID>3</ID>
    <Name>VDPLPS36B2 #03</Name>
    <Universe>0</Universe>
@@ -55,9 +55,9 @@
    <Channels>3</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>HQPower</Manufacturer>
-   <Model>VDPLPS36B2</Model>
-   <Mode>3-ch RGB</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>3 Channel</Mode>
    <ID>4</ID>
    <Name>VDPLPS36B2 #04</Name>
    <Universe>0</Universe>
@@ -65,9 +65,9 @@
    <Channels>3</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>HQPower</Manufacturer>
-   <Model>VDPLPS36B2</Model>
-   <Mode>3-ch RGB</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>3 Channel</Mode>
    <ID>5</ID>
    <Name>VDPLPS36B2 #05</Name>
    <Universe>0</Universe>
@@ -75,9 +75,9 @@
    <Channels>3</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>HQPower</Manufacturer>
-   <Model>VDPLPS36B2</Model>
-   <Mode>3-ch RGB</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>3 Channel</Mode>
    <ID>6</ID>
    <Name>VDPLPS36B2 #06</Name>
    <Universe>0</Universe>
@@ -85,9 +85,9 @@
    <Channels>3</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>HQPower</Manufacturer>
-   <Model>VDPLPS36B2</Model>
-   <Mode>3-ch RGB</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>3 Channel</Mode>
    <ID>7</ID>
    <Name>VDPLPS36B2 #07</Name>
    <Universe>0</Universe>
@@ -95,9 +95,9 @@
    <Channels>3</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>HQPower</Manufacturer>
-   <Model>VDPLPS36B2</Model>
-   <Mode>3-ch RGB</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>3 Channel</Mode>
    <ID>8</ID>
    <Name>VDPLPS36B2 #08</Name>
    <Universe>0</Universe>
@@ -105,9 +105,9 @@
    <Channels>3</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>HQPower</Manufacturer>
-   <Model>VDPLPS36B2</Model>
-   <Mode>3-ch RGB</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>3 Channel</Mode>
    <ID>9</ID>
    <Name>VDPLPS36B2 #09</Name>
    <Universe>0</Universe>
@@ -115,9 +115,9 @@
    <Channels>3</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>HQPower</Manufacturer>
-   <Model>VDPLPS36B2</Model>
-   <Mode>3-ch RGB</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>3 Channel</Mode>
    <ID>10</ID>
    <Name>VDPLPS36B2 #10</Name>
    <Universe>0</Universe>
@@ -125,9 +125,9 @@
    <Channels>3</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>HQPower</Manufacturer>
-   <Model>VDPLPS36B2</Model>
-   <Mode>3-ch RGB</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>3 Channel</Mode>
    <ID>11</ID>
    <Name>VDPLPS36B2 #11</Name>
    <Universe>0</Universe>
@@ -135,9 +135,9 @@
    <Channels>3</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>HQPower</Manufacturer>
-   <Model>VDPLPS36B2</Model>
-   <Mode>3-ch RGB</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>3 Channel</Mode>
    <ID>12</ID>
    <Name>VDPLPS36B2 #12</Name>
    <Universe>0</Universe>
@@ -145,43 +145,43 @@
    <Channels>3</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Audibax</Manufacturer>
-   <Model>Dallas 180 MK2</Model>
-   <Mode>4-ch RGBW</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
    <ID>13</ID>
    <Name>Dallas 180 MK2 #1</Name>
    <Universe>0</Universe>
-   <Address>41</Address>
+   <Address>47</Address>
    <Channels>4</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Audibax</Manufacturer>
-   <Model>Dallas 180 MK2</Model>
-   <Mode>4-ch RGBW</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
    <ID>14</ID>
    <Name>Dallas 180 MK2 #2</Name>
    <Universe>0</Universe>
-   <Address>45</Address>
+   <Address>51</Address>
    <Channels>4</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Audibax</Manufacturer>
-   <Model>Dallas 180 MK2</Model>
-   <Mode>4-ch RGBW</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
    <ID>15</ID>
    <Name>Dallas 180 MK2 #3</Name>
    <Universe>0</Universe>
-   <Address>49</Address>
+   <Address>55</Address>
    <Channels>4</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>Audibax</Manufacturer>
-   <Model>Dallas 180 MK2</Model>
-   <Mode>4-ch RGBW</Mode>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
    <ID>16</ID>
    <Name>Dallas 180 MK2 #4</Name>
    <Universe>0</Universe>
-   <Address>53</Address>
+   <Address>59</Address>
    <Channels>4</Channels>
   </Fixture>
   <Fixture>
@@ -191,7 +191,7 @@
    <ID>17</ID>
    <Name>Superfly XS</Name>
    <Universe>0</Universe>
-   <Address>57</Address>
+   <Address>99</Address>
    <Channels>5</Channels>
   </Fixture>
   <Fixture>
@@ -201,7 +201,7 @@
    <ID>18</ID>
    <Name>VDPL110CC LED Tri Spot</Name>
    <Universe>0</Universe>
-   <Address>62</Address>
+   <Address>63</Address>
    <Channels>7</Channels>
   </Fixture>
   <Function ID="0" Type="Scene" Name="New Scene" Hidden="True">
