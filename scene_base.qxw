@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="SimpleDesk">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.14.3</Version>
@@ -147,8 +147,28 @@
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
    <Model>Generic</Model>
-   <Mode>4 Channel</Mode>
+   <Mode>3 Channel</Mode>
    <ID>13</ID>
+   <Name>VDPLPS36B2 #13</Name>
+   <Universe>0</Universe>
+   <Address>41</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>3 Channel</Mode>
+   <ID>14</ID>
+   <Name>VDPLPS36B2 #14</Name>
+   <Universe>0</Universe>
+   <Address>44</Address>
+   <Channels>3</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
+   <ID>15</ID>
    <Name>Dallas 180 MK2 #1</Name>
    <Universe>0</Universe>
    <Address>47</Address>
@@ -158,7 +178,7 @@
    <Manufacturer>Generic</Manufacturer>
    <Model>Generic</Model>
    <Mode>4 Channel</Mode>
-   <ID>14</ID>
+   <ID>16</ID>
    <Name>Dallas 180 MK2 #2</Name>
    <Universe>0</Universe>
    <Address>51</Address>
@@ -168,7 +188,7 @@
    <Manufacturer>Generic</Manufacturer>
    <Model>Generic</Model>
    <Mode>4 Channel</Mode>
-   <ID>15</ID>
+   <ID>17</ID>
    <Name>Dallas 180 MK2 #3</Name>
    <Universe>0</Universe>
    <Address>55</Address>
@@ -178,7 +198,7 @@
    <Manufacturer>Generic</Manufacturer>
    <Model>Generic</Model>
    <Mode>4 Channel</Mode>
-   <ID>16</ID>
+   <ID>18</ID>
    <Name>Dallas 180 MK2 #4</Name>
    <Universe>0</Universe>
    <Address>59</Address>
@@ -188,7 +208,7 @@
    <Manufacturer>Cameo</Manufacturer>
    <Model>Superfly XS</Model>
    <Mode>5-Channel</Mode>
-   <ID>17</ID>
+   <ID>19</ID>
    <Name>Superfly XS</Name>
    <Universe>0</Universe>
    <Address>99</Address>
@@ -198,7 +218,7 @@
    <Manufacturer>HQ Power</Manufacturer>
    <Model>VDPL110CC LED Tri Spot</Model>
    <Mode>7-Channels</Mode>
-   <ID>18</ID>
+   <ID>20</ID>
    <Name>VDPL110CC LED Tri Spot</Name>
    <Universe>0</Universe>
    <Address>63</Address>
@@ -238,18 +258,12 @@
    <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="13">0,0,1,0,2,0,3,0</FixtureVal>
-   <FixtureVal ID="14">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="15">0,0,1,0,2,0,3,0</FixtureVal>
    <FixtureVal ID="16">0,0,1,0,2,0,3,0</FixtureVal>
-   <FixtureVal ID="17">0,0,1,0,2,0,3,0,4,0</FixtureVal>
-   <FixtureVal ID="18">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
-  </Function>
-  <Function ID="4" Type="Show" Name="Nuevo Show 0">
-   <TimeDivision Type="Time" BPM="120"/>
-   <Track ID="0" Name="Rota Azul 01" SceneID="101" isMute="0">
-    <ShowFunction ID="5" StartTime="0" Duration="10000" Color="#556b80"/>
-   </Track>
+   <FixtureVal ID="17">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="18">0,0,1,0,2,0,3,0</FixtureVal>
   </Function>
   <Function ID="5" Type="Sequence" Name="Nueva Secuencia 5" BoundScene="101">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
