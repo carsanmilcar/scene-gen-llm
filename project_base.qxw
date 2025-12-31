@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="SimpleDesk">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.14.3</Version>
@@ -401,7 +401,7 @@
    <Step Number="2" FadeIn="0" Hold="120" FadeOut="0">203</Step>
    <Step Number="3" FadeIn="0" Hold="120" FadeOut="0">204</Step>
   </Function>
-  <Function ID="300" Type="Scene" Name="AZ_A">
+  <Function ID="300" Type="Scene" Name="AZ_A" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,255,3,255,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,255</FixtureVal>
@@ -423,7 +423,7 @@
    <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
    <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
-  <Function ID="301" Type="Scene" Name="AZ_B">
+  <Function ID="301" Type="Scene" Name="AZ_B" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,255,1,255,2,255,3,255,4,0</FixtureVal>
    <FixtureVal ID="1">0,255,1,255,2,255</FixtureVal>
@@ -445,7 +445,7 @@
    <FixtureVal ID="17">0,0,1,0,2,128,3,0</FixtureVal>
    <FixtureVal ID="18">0,0,1,0,2,128,3,0</FixtureVal>
   </Function>
-  <Function ID="302" Type="Scene" Name="AZ_A_FLASH">
+  <Function ID="302" Type="Scene" Name="AZ_A_FLASH" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,255,3,255,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,255</FixtureVal>
@@ -467,7 +467,7 @@
    <FixtureVal ID="17">0,255,1,255,2,255,3,255</FixtureVal>
    <FixtureVal ID="18">0,255,1,255,2,255,3,255</FixtureVal>
   </Function>
-  <Function ID="303" Type="Scene" Name="AZ_B_FLASH">
+  <Function ID="303" Type="Scene" Name="AZ_B_FLASH" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,255,1,255,2,255,3,255,4,0</FixtureVal>
    <FixtureVal ID="1">0,255,1,255,2,255</FixtureVal>
@@ -489,7 +489,7 @@
    <FixtureVal ID="17">0,0,1,0,2,255,3,0</FixtureVal>
    <FixtureVal ID="18">0,0,1,0,2,255,3,0</FixtureVal>
   </Function>
-  <Function ID="304" Type="Scene" Name="AZ_TREN_00">
+  <Function ID="304" Type="Scene" Name="AZ_TREN_00" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,255,3,255,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
@@ -511,7 +511,7 @@
    <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
    <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
-  <Function ID="305" Type="Scene" Name="AZ_TREN_01">
+  <Function ID="305" Type="Scene" Name="AZ_TREN_01" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,255</FixtureVal>
@@ -533,7 +533,7 @@
    <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
    <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
-  <Function ID="306" Type="Scene" Name="AZ_TREN_02">
+  <Function ID="306" Type="Scene" Name="AZ_TREN_02" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
@@ -555,7 +555,7 @@
    <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
    <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
-  <Function ID="307" Type="Scene" Name="AZ_TREN_03">
+  <Function ID="307" Type="Scene" Name="AZ_TREN_03" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
@@ -577,7 +577,7 @@
    <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
    <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
-  <Function ID="308" Type="Scene" Name="AZ_TREN_04">
+  <Function ID="308" Type="Scene" Name="AZ_TREN_04" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
@@ -599,7 +599,7 @@
    <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
    <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
-  <Function ID="309" Type="Scene" Name="AZ_TREN_05">
+  <Function ID="309" Type="Scene" Name="AZ_TREN_05" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
@@ -621,7 +621,7 @@
    <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
    <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
-  <Function ID="310" Type="Scene" Name="AZ_TREN_06">
+  <Function ID="310" Type="Scene" Name="AZ_TREN_06" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
@@ -643,7 +643,7 @@
    <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
    <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
-  <Function ID="311" Type="Scene" Name="AZ_TREN_07">
+  <Function ID="311" Type="Scene" Name="AZ_TREN_07" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
@@ -665,7 +665,7 @@
    <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
    <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
-  <Function ID="312" Type="Scene" Name="AZ_TREN_08">
+  <Function ID="312" Type="Scene" Name="AZ_TREN_08" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
@@ -687,7 +687,7 @@
    <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
    <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
-  <Function ID="313" Type="Scene" Name="AZ_TREN_09">
+  <Function ID="313" Type="Scene" Name="AZ_TREN_09" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
@@ -709,7 +709,7 @@
    <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
    <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
-  <Function ID="314" Type="Scene" Name="AZ_TREN_10">
+  <Function ID="314" Type="Scene" Name="AZ_TREN_10" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
@@ -731,7 +731,7 @@
    <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
    <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
-  <Function ID="315" Type="Scene" Name="AZ_TREN_11">
+  <Function ID="315" Type="Scene" Name="AZ_TREN_11" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
@@ -753,7 +753,7 @@
    <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
    <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
-  <Function ID="316" Type="Scene" Name="AZ_TREN_12">
+  <Function ID="316" Type="Scene" Name="AZ_TREN_12" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
@@ -775,7 +775,7 @@
    <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
    <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
-  <Function ID="317" Type="Scene" Name="AZ_TREN_13">
+  <Function ID="317" Type="Scene" Name="AZ_TREN_13" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
@@ -797,7 +797,7 @@
    <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
    <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
-  <Function ID="318" Type="Scene" Name="AZ_TREN_14">
+  <Function ID="318" Type="Scene" Name="AZ_TREN_14" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
@@ -828,7 +828,7 @@
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">301</Step>
   </Function>
   <Function ID="320" Type="Chaser" Name="CH_AZ_TREN">
-   <Speed FadeIn="0" FadeOut="0" Duration="400"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="133"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -981,6 +981,104 @@
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
+   </Frame>
+   <Frame Caption="PALETAS" ID="9">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="False" X="0" Y="220" Width="400" Height="220"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Frame Caption="AZUL" ID="10">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="False" X="0" Y="60" Width="160" Height="160"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <Button Caption="FIJO" ID="11" Icon="">
+      <WindowState Visible="False" X="5" Y="35" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="300"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="TRANS" ID="12" Icon="">
+      <WindowState Visible="False" X="55" Y="35" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="319"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="TREN" ID="13" Icon="">
+      <WindowState Visible="False" X="5" Y="85" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="320"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="FLASH" ID="14" Icon="">
+      <WindowState Visible="False" X="55" Y="85" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="321"/>
+      <Action Override="0" ForceLTP="0">Flash</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </Frame>
+    <SpeedDial Caption="TREN Speed" ID="15">
+     <WindowState Visible="False" X="200" Y="45" Width="200" Height="175"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4281150765</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Visibility>127</Visibility>
+     <AbsoluteValue Minimum="0" Maximum="10000"/>
+     <Time>133</Time>
+     <Function FadeIn="0" FadeOut="0" Duration="6">320</Function>
+    </SpeedDial>
    </Frame>
    <SpeedDial Caption="Duración" ID="8">
     <WindowState Visible="False" X="395" Y="15" Width="200" Height="175"/>
