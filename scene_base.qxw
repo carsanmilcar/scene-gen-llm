@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.14.3</Version>
@@ -261,7 +261,6 @@
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">101</Step>
   </Function>
   <Function ID="3" Type="Scene" Name="Nueva Escena 3">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -271,7 +270,7 @@
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
-   <Step Number="0" FadeIn="0" Hold="10000" FadeOut="0" Values="3">1:2,255</Step>
+   <Step Number="0" FadeIn="0" Hold="10000" FadeOut="0" Values="0"/>
   </Function>
   <Function ID="102" Type="Scene" Name="Primarios Azul">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -291,6 +290,117 @@
    <FixtureVal ID="13">0,0,1,0,2,255</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,255</FixtureVal>
   </Function>
+  <Function ID="200" Type="Scene" Name="P_WARM">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,120,1,255,2,20,3,255,4,0</FixtureVal>
+   <FixtureVal ID="1">0,255,1,120,2,20</FixtureVal>
+   <FixtureVal ID="2">0,255,1,120,2,20</FixtureVal>
+   <FixtureVal ID="3">0,255,1,120,2,20</FixtureVal>
+   <FixtureVal ID="4">0,255,1,120,2,20</FixtureVal>
+   <FixtureVal ID="5">0,255,1,120,2,20</FixtureVal>
+   <FixtureVal ID="6">0,255,1,120,2,20</FixtureVal>
+   <FixtureVal ID="7">0,255,1,120,2,20</FixtureVal>
+   <FixtureVal ID="8">0,255,1,120,2,20</FixtureVal>
+   <FixtureVal ID="9">0,255,1,120,2,20</FixtureVal>
+   <FixtureVal ID="10">0,255,1,120,2,20</FixtureVal>
+   <FixtureVal ID="11">0,255,1,120,2,20</FixtureVal>
+   <FixtureVal ID="12">0,255,1,120,2,20</FixtureVal>
+   <FixtureVal ID="13">0,255,1,120,2,20</FixtureVal>
+   <FixtureVal ID="14">0,255,1,120,2,20</FixtureVal>
+  </Function>
+  <Function ID="201" Type="Scene" Name="P_COLD">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,120,1,20,2,255,3,255,4,0</FixtureVal>
+   <FixtureVal ID="1">0,20,1,120,2,255</FixtureVal>
+   <FixtureVal ID="2">0,20,1,120,2,255</FixtureVal>
+   <FixtureVal ID="3">0,20,1,120,2,255</FixtureVal>
+   <FixtureVal ID="4">0,20,1,120,2,255</FixtureVal>
+   <FixtureVal ID="5">0,20,1,120,2,255</FixtureVal>
+   <FixtureVal ID="6">0,20,1,120,2,255</FixtureVal>
+   <FixtureVal ID="7">0,20,1,120,2,255</FixtureVal>
+   <FixtureVal ID="8">0,20,1,120,2,255</FixtureVal>
+   <FixtureVal ID="9">0,20,1,120,2,255</FixtureVal>
+   <FixtureVal ID="10">0,20,1,120,2,255</FixtureVal>
+   <FixtureVal ID="11">0,20,1,120,2,255</FixtureVal>
+   <FixtureVal ID="12">0,20,1,120,2,255</FixtureVal>
+   <FixtureVal ID="13">0,20,1,120,2,255</FixtureVal>
+   <FixtureVal ID="14">0,20,1,120,2,255</FixtureVal>
+  </Function>
+  <Function ID="202" Type="Scene" Name="P_PURPLE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,180,2,255,3,255,4,0</FixtureVal>
+   <FixtureVal ID="1">0,180,1,0,2,255</FixtureVal>
+   <FixtureVal ID="2">0,180,1,0,2,255</FixtureVal>
+   <FixtureVal ID="3">0,180,1,0,2,255</FixtureVal>
+   <FixtureVal ID="4">0,180,1,0,2,255</FixtureVal>
+   <FixtureVal ID="5">0,180,1,0,2,255</FixtureVal>
+   <FixtureVal ID="6">0,180,1,0,2,255</FixtureVal>
+   <FixtureVal ID="7">0,180,1,0,2,255</FixtureVal>
+   <FixtureVal ID="8">0,180,1,0,2,255</FixtureVal>
+   <FixtureVal ID="9">0,180,1,0,2,255</FixtureVal>
+   <FixtureVal ID="10">0,180,1,0,2,255</FixtureVal>
+   <FixtureVal ID="11">0,180,1,0,2,255</FixtureVal>
+   <FixtureVal ID="12">0,180,1,0,2,255</FixtureVal>
+   <FixtureVal ID="13">0,180,1,0,2,255</FixtureVal>
+   <FixtureVal ID="14">0,180,1,0,2,255</FixtureVal>
+  </Function>
+  <Function ID="203" Type="Scene" Name="P_WHITE">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255,1,255,2,255,3,255,4,0</FixtureVal>
+   <FixtureVal ID="1">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="2">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="3">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="4">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="5">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="6">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="7">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="8">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="9">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="10">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="11">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="12">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="13">0,255,1,255,2,255</FixtureVal>
+   <FixtureVal ID="14">0,255,1,255,2,255</FixtureVal>
+  </Function>
+  <Function ID="204" Type="Scene" Name="P_BLACKOUT">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="210" Type="Chaser" Name="CH_COLOR">
+   <Speed FadeIn="800" FadeOut="0" Duration="144"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">200</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">201</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">202</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">203</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">201</Step>
+  </Function>
+  <Function ID="211" Type="Chaser" Name="HIT_FLASH">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="120" FadeOut="0">203</Step>
+   <Step Number="1" FadeIn="0" Hold="120" FadeOut="0">204</Step>
+   <Step Number="2" FadeIn="0" Hold="120" FadeOut="0">203</Step>
+   <Step Number="3" FadeIn="0" Hold="120" FadeOut="0">204</Step>
+  </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
    <ChannelStyle>1</ChannelStyle>
@@ -307,8 +417,7 @@
     <BackgroundImage>None</BackgroundImage>
     <Font>Default</Font>
    </Appearance>
-   <AudioTriggers BarsNumber="16" Caption="" ID="0">
-    <WindowState Visible="False" X="665" Y="10" Width="300" Height="200"/>
+   <Frame Caption="LOOKS" ID="0">
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -316,7 +425,122 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-   </AudioTriggers>
+    <WindowState Visible="True" X="0" Y="10" Width="200" Height="200"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="P_COLD" ID="1" Icon="">
+     <WindowState Visible="True" X="5" Y="35" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="201"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="P_PURPLE" ID="2" Icon="">
+     <WindowState Visible="True" X="55" Y="35" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="202"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Primarios Azul" ID="3" Icon="">
+     <WindowState Visible="True" X="55" Y="85" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="102"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="P_WHITE" ID="4" Icon="">
+     <WindowState Visible="True" X="5" Y="85" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="203"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="P_WARM" ID="5" Icon="">
+     <WindowState Visible="True" X="105" Y="35" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="200"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </Frame>
+   <Frame Caption="MOVE" ID="6">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="195" Y="10" Width="200" Height="200"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="CH_COLOR" ID="7" Icon="">
+     <WindowState Visible="True" X="115" Y="35" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="210"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </Frame>
+   <SpeedDial Caption="Duración" ID="8">
+    <WindowState Visible="True" X="395" Y="15" Width="200" Height="175"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4281150765</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Visibility>127</Visibility>
+    <AbsoluteValue Minimum="0" Maximum="10000"/>
+    <Time>144</Time>
+    <Function FadeIn="0" FadeOut="0" Duration="6">210</Function>
+   </SpeedDial>
   </Frame>
   <Properties>
    <Size Width="1920" Height="1080"/>
