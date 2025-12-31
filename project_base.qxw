@@ -508,10 +508,6 @@
    <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
   <Function ID="305" Type="Scene" Name="AZ_TREN_01" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -530,10 +526,6 @@
    <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
   <Function ID="306" Type="Scene" Name="AZ_TREN_02" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -552,10 +544,6 @@
    <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
   <Function ID="307" Type="Scene" Name="AZ_TREN_03" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -574,10 +562,6 @@
    <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
   <Function ID="308" Type="Scene" Name="AZ_TREN_04" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -596,10 +580,6 @@
    <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
   <Function ID="309" Type="Scene" Name="AZ_TREN_05" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -618,10 +598,6 @@
    <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
   <Function ID="310" Type="Scene" Name="AZ_TREN_06" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -640,10 +616,6 @@
    <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
   <Function ID="311" Type="Scene" Name="AZ_TREN_07" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -662,10 +634,6 @@
    <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
   <Function ID="312" Type="Scene" Name="AZ_TREN_08" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -684,10 +652,6 @@
    <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
   <Function ID="313" Type="Scene" Name="AZ_TREN_09" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -706,10 +670,6 @@
    <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
   <Function ID="314" Type="Scene" Name="AZ_TREN_10" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -728,10 +688,6 @@
    <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
   <Function ID="315" Type="Scene" Name="AZ_TREN_11" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -750,10 +706,6 @@
    <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
   <Function ID="316" Type="Scene" Name="AZ_TREN_12" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -772,10 +724,6 @@
    <FixtureVal ID="12">0,0,1,0,2,255</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
   <Function ID="317" Type="Scene" Name="AZ_TREN_13" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -794,10 +742,6 @@
    <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,255</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
   </Function>
   <Function ID="318" Type="Scene" Name="AZ_TREN_14" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -816,10 +760,445 @@
    <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,255</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
+  </Function>
+  <Function ID="600" Type="Scene" Name="MO_A" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,255,2,255,3,255,4,0</FixtureVal>
+   <FixtureVal ID="1">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="2">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="3">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="4">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="5">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="6">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="7">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="8">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="9">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="10">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="11">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="12">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="13">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="14">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="15">0,128,1,90,2,0,3,0</FixtureVal>
+   <FixtureVal ID="16">0,128,1,90,2,0,3,0</FixtureVal>
+   <FixtureVal ID="17">0,128,1,90,2,0,3,0</FixtureVal>
+   <FixtureVal ID="18">0,128,1,90,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="601" Type="Scene" Name="MO_B" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,180,1,255,2,0,3,255,4,0</FixtureVal>
+   <FixtureVal ID="1">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="2">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="3">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="4">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="5">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="6">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="7">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="8">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="9">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="10">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="11">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="12">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="13">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="14">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="15">0,128,1,0,2,128,3,0</FixtureVal>
+   <FixtureVal ID="16">0,128,1,0,2,128,3,0</FixtureVal>
+   <FixtureVal ID="17">0,128,1,0,2,128,3,0</FixtureVal>
+   <FixtureVal ID="18">0,128,1,0,2,128,3,0</FixtureVal>
+  </Function>
+  <Function ID="602" Type="Scene" Name="MO_A_FLASH" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,255,2,255,3,255,4,0</FixtureVal>
+   <FixtureVal ID="1">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="2">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="3">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="4">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="5">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="6">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="7">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="8">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="9">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="10">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="11">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="12">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="13">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="14">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="15">0,255,1,180,2,0,3,0</FixtureVal>
+   <FixtureVal ID="16">0,255,1,180,2,0,3,0</FixtureVal>
+   <FixtureVal ID="17">0,255,1,180,2,0,3,0</FixtureVal>
+   <FixtureVal ID="18">0,255,1,180,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="603" Type="Scene" Name="MO_B_FLASH" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,180,1,255,2,0,3,255,4,0</FixtureVal>
+   <FixtureVal ID="1">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="2">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="3">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="4">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="5">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="6">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="7">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="8">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="9">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="10">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="11">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="12">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="13">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="14">0,255,1,180,2,0</FixtureVal>
+   <FixtureVal ID="15">0,255,1,0,2,255,3,0</FixtureVal>
+   <FixtureVal ID="16">0,255,1,0,2,255,3,0</FixtureVal>
+   <FixtureVal ID="17">0,255,1,0,2,255,3,0</FixtureVal>
+   <FixtureVal ID="18">0,255,1,0,2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="604" Type="Scene" Name="MO_TREN_00" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,255,2,255,3,255,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="605" Type="Scene" Name="MO_TREN_01" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="606" Type="Scene" Name="MO_TREN_02" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="607" Type="Scene" Name="MO_TREN_03" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="608" Type="Scene" Name="MO_TREN_04" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="609" Type="Scene" Name="MO_TREN_05" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="610" Type="Scene" Name="MO_TREN_06" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="611" Type="Scene" Name="MO_TREN_07" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="612" Type="Scene" Name="MO_TREN_08" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="613" Type="Scene" Name="MO_TREN_09" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="614" Type="Scene" Name="MO_TREN_10" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="615" Type="Scene" Name="MO_TREN_11" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="616" Type="Scene" Name="MO_TREN_12" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="617" Type="Scene" Name="MO_TREN_13" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="618" Type="Scene" Name="MO_TREN_14" Path="MORADO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,255,1,0,2,255</FixtureVal>
+  </Function>
+  <Function ID="619" Type="Scene" Name="MO_FLASH_PRI_ON">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,255,2,255,3,255,4,0</FixtureVal>
+   <FixtureVal ID="1">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="2">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="3">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="4">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="5">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="6">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="7">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="8">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="9">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="10">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="11">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="12">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="13">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="14">0,255,1,0,2,255</FixtureVal>
+   <FixtureVal ID="15">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="16">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="17">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="18">0,0,1,0,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="620" Type="Scene" Name="MO_FLASH_DAL_ON">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="15">0,255,1,180,2,0,3,0</FixtureVal>
+   <FixtureVal ID="16">0,255,1,180,2,0,3,0</FixtureVal>
+   <FixtureVal ID="17">0,255,1,180,2,0,3,0</FixtureVal>
+   <FixtureVal ID="18">0,255,1,180,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="621" Type="Chaser" Name="CH_MO_TRANS">
+   <Speed FadeIn="1200" FadeOut="0" Duration="3500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">600</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">601</Step>
+  </Function>
+  <Function ID="622" Type="Chaser" Name="CH_MO_TREN">
+   <Speed FadeIn="0" FadeOut="0" Duration="400"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">604</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">605</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">606</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">607</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">608</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">609</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">610</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">611</Step>
+   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0">612</Step>
+   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">613</Step>
+   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">614</Step>
+   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0">615</Step>
+   <Step Number="12" FadeIn="0" Hold="0" FadeOut="0">616</Step>
+   <Step Number="13" FadeIn="0" Hold="0" FadeOut="0">617</Step>
+   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">618</Step>
+  </Function>
+  <Function ID="623" Type="Chaser" Name="CH_MO_FLASH_ONOFF">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="120" FadeOut="0">619</Step>
+   <Step Number="1" FadeIn="0" Hold="120" FadeOut="0">620</Step>
   </Function>
   <Function ID="319" Type="Chaser" Name="CH_AZ_TRANS">
    <Speed FadeIn="1200" FadeOut="0" Duration="3500"/>
@@ -933,6 +1312,445 @@
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
    <Step Number="0" FadeIn="0" Hold="120" FadeOut="0">401</Step>
    <Step Number="1" FadeIn="0" Hold="120" FadeOut="0">402</Step>
+  </Function>
+  <Function ID="500" Type="Scene" Name="RO_A" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,255,2,0,3,255,4,0</FixtureVal>
+   <FixtureVal ID="1">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="15">0,128,1,128,2,0,3,0</FixtureVal>
+   <FixtureVal ID="16">0,128,1,128,2,0,3,0</FixtureVal>
+   <FixtureVal ID="17">0,128,1,128,2,0,3,0</FixtureVal>
+   <FixtureVal ID="18">0,128,1,128,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="501" Type="Scene" Name="RO_B" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255,1,255,2,0,3,255,4,0</FixtureVal>
+   <FixtureVal ID="1">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="2">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="3">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="4">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="5">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="6">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="7">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="8">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="9">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="10">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="11">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="12">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="13">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="14">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="15">0,128,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="16">0,128,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="17">0,128,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="18">0,128,1,0,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="502" Type="Scene" Name="RO_A_FLASH" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,255,2,0,3,255,4,0</FixtureVal>
+   <FixtureVal ID="1">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="15">0,255,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="16">0,255,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="17">0,255,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="18">0,255,1,255,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="503" Type="Scene" Name="RO_B_FLASH" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255,1,255,2,0,3,255,4,0</FixtureVal>
+   <FixtureVal ID="1">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="2">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="3">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="4">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="5">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="6">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="7">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="8">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="9">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="10">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="11">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="12">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="13">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="14">0,255,1,255,2,0</FixtureVal>
+   <FixtureVal ID="15">0,255,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="16">0,255,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="17">0,255,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="18">0,255,1,0,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="504" Type="Scene" Name="RO_TREN_00" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,255,2,0,3,255,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="505" Type="Scene" Name="RO_TREN_01" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="506" Type="Scene" Name="RO_TREN_02" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="507" Type="Scene" Name="RO_TREN_03" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="508" Type="Scene" Name="RO_TREN_04" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="509" Type="Scene" Name="RO_TREN_05" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="510" Type="Scene" Name="RO_TREN_06" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="511" Type="Scene" Name="RO_TREN_07" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="512" Type="Scene" Name="RO_TREN_08" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="513" Type="Scene" Name="RO_TREN_09" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="514" Type="Scene" Name="RO_TREN_10" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="515" Type="Scene" Name="RO_TREN_11" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="516" Type="Scene" Name="RO_TREN_12" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="517" Type="Scene" Name="RO_TREN_13" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="518" Type="Scene" Name="RO_TREN_14" Path="ROJO">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,255,1,0,2,0</FixtureVal>
+  </Function>
+  <Function ID="520" Type="Scene" Name="RO_FLASH_PRI_ON">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,255,2,0,3,255,4,0</FixtureVal>
+   <FixtureVal ID="1">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,255,1,0,2,0</FixtureVal>
+   <FixtureVal ID="15">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="16">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="17">0,0,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="18">0,0,1,0,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="521" Type="Scene" Name="RO_FLASH_DAL_ON">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
+   <FixtureVal ID="15">0,255,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="16">0,255,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="17">0,255,1,255,2,0,3,0</FixtureVal>
+   <FixtureVal ID="18">0,255,1,255,2,0,3,0</FixtureVal>
+  </Function>
+  <Function ID="522" Type="Chaser" Name="CH_RO_TRANS">
+   <Speed FadeIn="1200" FadeOut="0" Duration="3500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">500</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">501</Step>
+  </Function>
+  <Function ID="523" Type="Chaser" Name="CH_RO_TREN">
+   <Speed FadeIn="0" FadeOut="0" Duration="47"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">504</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">505</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">506</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">507</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">508</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">509</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">510</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">511</Step>
+   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0">512</Step>
+   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">513</Step>
+   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">514</Step>
+   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0">515</Step>
+   <Step Number="12" FadeIn="0" Hold="0" FadeOut="0">516</Step>
+   <Step Number="13" FadeIn="0" Hold="0" FadeOut="0">517</Step>
+   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">518</Step>
+  </Function>
+  <Function ID="524" Type="Chaser" Name="CH_RO_FLASH_ONOFF">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="120" FadeOut="0">520</Step>
+   <Step Number="1" FadeIn="0" Hold="120" FadeOut="0">521</Step>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
@@ -1068,7 +1886,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="220" Width="400" Height="220"/>
+    <WindowState Visible="True" X="0" Y="220" Width="1085" Height="620"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -1076,7 +1894,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="BLACKOUT" ID="30" Icon="">
-     <WindowState Visible="True" X="0" Y="15" Width="160" Height="40"/>
+     <WindowState Visible="True" X="60" Y="180" Width="160" Height="40"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1111,7 +1929,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <WindowState Visible="True" X="0" Y="0" Width="200" Height="200"/>
+      <WindowState Visible="True" X="-40" Y="-40" Width="200" Height="200"/>
       <AllowChildren>True</AllowChildren>
       <AllowResize>True</AllowResize>
       <ShowHeader>True</ShowHeader>
@@ -1120,7 +1938,7 @@
       <Collapsed>False</Collapsed>
       <Disabled>False</Disabled>
       <Button Caption="FIJO2" ID="17" Icon="">
-       <WindowState Visible="True" X="105" Y="35" Width="50" Height="50"/>
+       <WindowState Visible="True" X="140" Y="75" Width="50" Height="50"/>
        <Appearance>
         <FrameStyle>None</FrameStyle>
         <ForegroundColor>Default</ForegroundColor>
@@ -1169,7 +1987,7 @@
        <Font>Default</Font>
       </Appearance>
       <Function ID="320"/>
-      <Action>Toggle</Action>
+      <Action FadeOut="110">StopAll</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="FLASH" ID="14" Icon="">
@@ -1182,10 +2000,234 @@
        <Font>Default</Font>
       </Appearance>
       <Function ID="403"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </Frame>
+    <Frame Caption="ROJO" ID="31">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="0" Y="240" Width="160" Height="160"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <SoloFrame Caption="" ID="18">
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <WindowState Visible="True" X="0" Y="0" Width="200" Height="200"/>
+      <AllowChildren>True</AllowChildren>
+      <AllowResize>True</AllowResize>
+      <ShowHeader>True</ShowHeader>
+      <ShowEnableButton>True</ShowEnableButton>
+      <Mixing>False</Mixing>
+      <Collapsed>False</Collapsed>
+      <Disabled>False</Disabled>
+      <Button Caption="FIJO2" ID="37" Icon="">
+       <WindowState Visible="True" X="105" Y="35" Width="50" Height="50"/>
+       <Appearance>
+        <FrameStyle>None</FrameStyle>
+        <ForegroundColor>Default</ForegroundColor>
+        <BackgroundColor>Default</BackgroundColor>
+        <BackgroundImage>None</BackgroundImage>
+        <Font>Default</Font>
+       </Appearance>
+       <Function ID="501"/>
+       <Action>Toggle</Action>
+       <Intensity Adjust="False">100</Intensity>
+      </Button>
+     </SoloFrame>
+     <Button Caption="FIJO" ID="32" Icon="">
+      <WindowState Visible="True" X="5" Y="35" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="500"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="TRANS" ID="33" Icon="">
+      <WindowState Visible="True" X="55" Y="35" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="522"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="TREN" ID="34" Icon="">
+      <WindowState Visible="True" X="5" Y="85" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="523"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="FLASH" ID="35" Icon="">
+      <WindowState Visible="True" X="55" Y="85" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="524"/>
       <Action Override="0" ForceLTP="0">Flash</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
     </Frame>
+    <SpeedDial Caption="TREN Speed ROJO" ID="36">
+     <WindowState Visible="True" X="200" Y="225" Width="200" Height="175"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4281150765</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Visibility>127</Visibility>
+     <AbsoluteValue Minimum="0" Maximum="10000"/>
+     <Time>47</Time>
+     <Function FadeIn="0" FadeOut="0" Duration="6">523</Function>
+    </SpeedDial>
+    <Frame Caption="MORADO" ID="40">
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <WindowState Visible="True" X="0" Y="420" Width="160" Height="160"/>
+     <AllowChildren>True</AllowChildren>
+     <AllowResize>True</AllowResize>
+     <ShowHeader>True</ShowHeader>
+     <ShowEnableButton>True</ShowEnableButton>
+     <Collapsed>False</Collapsed>
+     <Disabled>False</Disabled>
+     <SoloFrame Caption="" ID="41">
+      <Appearance>
+       <FrameStyle>Sunken</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <WindowState Visible="True" X="0" Y="0" Width="200" Height="200"/>
+      <AllowChildren>True</AllowChildren>
+      <AllowResize>True</AllowResize>
+      <ShowHeader>True</ShowHeader>
+      <ShowEnableButton>True</ShowEnableButton>
+      <Mixing>False</Mixing>
+      <Collapsed>False</Collapsed>
+      <Disabled>False</Disabled>
+      <Button Caption="FIJO2" ID="42" Icon="">
+       <WindowState Visible="True" X="105" Y="35" Width="50" Height="50"/>
+       <Appearance>
+        <FrameStyle>None</FrameStyle>
+        <ForegroundColor>Default</ForegroundColor>
+        <BackgroundColor>Default</BackgroundColor>
+        <BackgroundImage>None</BackgroundImage>
+        <Font>Default</Font>
+       </Appearance>
+       <Function ID="601"/>
+       <Action>Toggle</Action>
+       <Intensity Adjust="False">100</Intensity>
+      </Button>
+     </SoloFrame>
+     <Button Caption="FIJO" ID="43" Icon="">
+      <WindowState Visible="True" X="5" Y="35" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="600"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="TRANS" ID="44" Icon="">
+      <WindowState Visible="True" X="55" Y="35" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="621"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="TREN" ID="45" Icon="">
+      <WindowState Visible="True" X="5" Y="85" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="622"/>
+      <Action>Toggle</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+     <Button Caption="FLASH" ID="46" Icon="">
+      <WindowState Visible="True" X="55" Y="85" Width="50" Height="50"/>
+      <Appearance>
+       <FrameStyle>None</FrameStyle>
+       <ForegroundColor>Default</ForegroundColor>
+       <BackgroundColor>Default</BackgroundColor>
+       <BackgroundImage>None</BackgroundImage>
+       <Font>Default</Font>
+      </Appearance>
+      <Function ID="623"/>
+      <Action Override="0" ForceLTP="0">Flash</Action>
+      <Intensity Adjust="False">100</Intensity>
+     </Button>
+    </Frame>
+    <SpeedDial Caption="TREN Speed MORADO" ID="47">
+     <WindowState Visible="True" X="200" Y="405" Width="200" Height="175"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4281150765</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Visibility>127</Visibility>
+     <AbsoluteValue Minimum="0" Maximum="10000"/>
+     <Time>47</Time>
+     <Function FadeIn="0" FadeOut="0" Duration="6">622</Function>
+    </SpeedDial>
     <SpeedDial Caption="TREN Speed" ID="15">
      <WindowState Visible="True" X="200" Y="45" Width="200" Height="175"/>
      <Appearance>
