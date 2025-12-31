@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="SimpleDesk">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.14.3</Version>
@@ -10,18 +10,16 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" UID="DMX USB PRO - Salida DMX 1 - (S/N: EN492483)" Line="0">
-     <PluginParameters UniverseChannels="104"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
    <Universe Name="Universe 4" ID="3"/>
   </InputOutputMap>
   <Fixture>
-   <Manufacturer>Generic</Manufacturer>
-   <Model>Generic</Model>
-   <Mode>5 Channel</Mode>
+   <Manufacturer>LED chino generic</Manufacturer>
+   <Model>Led generico</Model>
+   <Mode>5ch GRB + Dimmer + Effect</Mode>
    <ID>0</ID>
    <Name>Barras LED</Name>
    <Universe>0</Universe>
@@ -228,6 +226,25 @@
    <Address>68</Address>
    <Channels>7</Channels>
   </Fixture>
+  <FixtureGroup ID="0">
+   <Name>Focos primarios</Name>
+   <Size X="10" Y="10"/>
+   <Head X="0" Y="0" Fixture="0">0</Head>
+   <Head X="0" Y="1" Fixture="1">0</Head>
+   <Head X="0" Y="2" Fixture="2">0</Head>
+   <Head X="0" Y="3" Fixture="3">0</Head>
+   <Head X="0" Y="4" Fixture="4">0</Head>
+   <Head X="0" Y="5" Fixture="5">0</Head>
+   <Head X="0" Y="6" Fixture="6">0</Head>
+   <Head X="0" Y="7" Fixture="7">0</Head>
+   <Head X="0" Y="8" Fixture="8">0</Head>
+   <Head X="0" Y="9" Fixture="9">0</Head>
+   <Head X="0" Y="10" Fixture="10">0</Head>
+   <Head X="0" Y="11" Fixture="11">0</Head>
+   <Head X="0" Y="12" Fixture="12">0</Head>
+   <Head X="0" Y="13" Fixture="13">0</Head>
+   <Head X="0" Y="14" Fixture="14">0</Head>
+  </FixtureGroup>
   <Function ID="0" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">2,0</FixtureVal>
@@ -245,29 +262,9 @@
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">101</Step>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">3</Step>
   </Function>
-  <Function ID="3" Type="Scene" Name="Nueva Escena desde Live 3">
+  <Function ID="3" Type="Scene" Name="Nueva Escena 3">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0</FixtureVal>
-   <FixtureVal ID="1">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="2">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="3">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="4">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="5">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="6">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="7">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="8">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="9">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="10">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="11">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="12">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="13">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
-   <FixtureVal ID="15">0,0,1,0,2,0,3,0</FixtureVal>
-   <FixtureVal ID="16">0,0,1,0,2,0,3,0</FixtureVal>
-   <FixtureVal ID="17">0,0,1,0,2,0,3,0</FixtureVal>
-   <FixtureVal ID="18">0,0,1,0,2,0,3,0</FixtureVal>
   </Function>
   <Function ID="5" Type="Sequence" Name="Nueva Secuencia 5" BoundScene="101">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
