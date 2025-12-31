@@ -36,65 +36,66 @@
       }
     }
   },
-  "BarrasLED_5ch": {
-    "channels": {
-      "1": {
-        "name": "intensity",
-        "function": "dimmer maestro",
-        "ranges": [
-          {
-            "dmx_min": 0,
-            "dmx_max": 255,
-            "description": "0-100% salida"
-          }
-        ]
-      },
-      "2": {
-        "name": "red",
-        "function": "intensidad canal rojo",
-        "ranges": [
-          {
-            "dmx_min": 0,
-            "dmx_max": 255,
-            "description": "0-100% salida"
-          }
-        ]
-      },
-      "3": {
-        "name": "green",
-        "function": "intensidad canal verde",
-        "ranges": [
-          {
-            "dmx_min": 0,
-            "dmx_max": 255,
-            "description": "0-100% salida"
-          }
-        ]
-      },
-      "4": {
-        "name": "blue",
-        "function": "intensidad canal azul",
-        "ranges": [
-          {
-            "dmx_min": 0,
-            "dmx_max": 255,
-            "description": "0-100% salida"
-          }
-        ]
-      },
-      "5": {
-        "name": "unknown",
-        "function": "canal no documentado",
-        "ranges": [
-          {
-            "dmx_min": 0,
-            "dmx_max": 255,
-            "description": "sin especificar"
-          }
-        ]
-      }
+ "BarrasLED_5ch": {
+  "channels": {
+    "1": {
+      "name": "green",
+      "function": "intensidad canal verde (GRB)",
+      "ranges": [
+        {
+          "dmx_min": 0,
+          "dmx_max": 255,
+          "description": "0-100% salida"
+        }
+      ]
+    },
+    "2": {
+      "name": "red",
+      "function": "intensidad canal rojo (GRB)",
+      "ranges": [
+        {
+          "dmx_min": 0,
+          "dmx_max": 255,
+          "description": "0-100% salida"
+        }
+      ]
+    },
+    "3": {
+      "name": "blue",
+      "function": "intensidad canal azul (GRB)",
+      "ranges": [
+        {
+          "dmx_min": 0,
+          "dmx_max": 255,
+          "description": "0-100% salida"
+        }
+      ]
+    },
+    "4": {
+      "name": "intensity",
+      "function": "dimmer maestro",
+      "ranges": [
+        {
+          "dmx_min": 0,
+          "dmx_max": 255,
+          "description": "0-100% salida"
+        }
+      ]
+    },
+    "5": {
+      "name": "effect",
+      "function": "efecto / strobe (no documentado)",
+      "ranges": [
+        {
+          "dmx_min": 0,
+          "dmx_max": 255,
+          "description": "sin especificar (posible strobe/efectos)"
+        }
+      ]
     }
-  },
+  }
+},
+
   "VDPLPS36B2_5ch": {
     "channels": {
       "1": {
