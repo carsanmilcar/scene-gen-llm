@@ -383,7 +383,7 @@
    <FixtureVal ID="14">0,0,1,0,2,0</FixtureVal>
   </Function>
   <Function ID="210" Type="Chaser" Name="CH_COLOR">
-   <Speed FadeIn="800" FadeOut="0" Duration="267"/>
+   <Speed FadeIn="800" FadeOut="0" Duration="361"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -420,10 +420,10 @@
    <FixtureVal ID="12">0,0,1,0,2,255</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,255</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,255</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,128,3,128</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,128,3,128</FixtureVal>
+   <FixtureVal ID="15">0,128,1,128,2,128,3,0</FixtureVal>
+   <FixtureVal ID="16">0,128,1,128,2,128,3,0</FixtureVal>
+   <FixtureVal ID="17">0,128,1,128,2,128,3,0</FixtureVal>
+   <FixtureVal ID="18">0,128,1,128,2,128,3,0</FixtureVal>
   </Function>
   <Function ID="301" Type="Scene" Name="AZ_B" Path="AZUL">
    <Speed FadeIn="1200" FadeOut="1200" Duration="0"/>
@@ -464,10 +464,10 @@
    <FixtureVal ID="12">0,0,1,0,2,255</FixtureVal>
    <FixtureVal ID="13">0,0,1,0,2,255</FixtureVal>
    <FixtureVal ID="14">0,0,1,0,2,255</FixtureVal>
-   <FixtureVal ID="15">0,255,1,255,2,255,3,255</FixtureVal>
-   <FixtureVal ID="16">0,255,1,255,2,255,3,255</FixtureVal>
-   <FixtureVal ID="17">0,255,1,255,2,255,3,255</FixtureVal>
-   <FixtureVal ID="18">0,255,1,255,2,255,3,255</FixtureVal>
+   <FixtureVal ID="15">0,255,1,255,2,255,3,0</FixtureVal>
+   <FixtureVal ID="16">0,255,1,255,2,255,3,0</FixtureVal>
+   <FixtureVal ID="17">0,255,1,255,2,255,3,0</FixtureVal>
+   <FixtureVal ID="18">0,255,1,255,2,255,3,0</FixtureVal>
   </Function>
   <Function ID="303" Type="Scene" Name="AZ_B_FLASH" Path="AZUL">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -762,7 +762,7 @@
    <FixtureVal ID="14">0,0,1,0,2,255</FixtureVal>
   </Function>
   <Function ID="319" Type="Chaser" Name="CH_AZ_TRANS">
-   <Speed FadeIn="1200" FadeOut="1200" Duration="3500"/>
+   <Speed FadeIn="1200" FadeOut="1200" Duration="139"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
@@ -770,7 +770,7 @@
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">301</Step>
   </Function>
   <Function ID="320" Type="Chaser" Name="CH_AZ_TREN">
-   <Speed FadeIn="0" FadeOut="0" Duration="121"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="321"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -891,14 +891,14 @@
    <FixtureVal ID="12">0,255,1,0,2,0</FixtureVal>
    <FixtureVal ID="13">0,255,1,0,2,0</FixtureVal>
    <FixtureVal ID="14">0,255,1,0,2,0</FixtureVal>
-   <FixtureVal ID="15">0,128,1,128,2,0,3,0</FixtureVal>
-   <FixtureVal ID="16">0,128,1,128,2,0,3,0</FixtureVal>
-   <FixtureVal ID="17">0,128,1,128,2,0,3,0</FixtureVal>
-   <FixtureVal ID="18">0,128,1,128,2,0,3,0</FixtureVal>
+   <FixtureVal ID="15">0,128,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="16">0,128,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="17">0,128,1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="18">0,128,1,0,2,0,3,0</FixtureVal>
   </Function>
   <Function ID="501" Type="Scene" Name="RO_B" Path="ROJO">
    <Speed FadeIn="1200" FadeOut="1200" Duration="0"/>
-   <FixtureVal ID="0">0,255,1,255,2,0,3,255,4,0</FixtureVal>
+   <FixtureVal ID="0">0,0,1,236,2,0,3,0,4,0</FixtureVal>
    <FixtureVal ID="1">0,255,1,255,2,0</FixtureVal>
    <FixtureVal ID="2">0,255,1,255,2,0</FixtureVal>
    <FixtureVal ID="3">0,255,1,255,2,0</FixtureVal>
@@ -1285,7 +1285,7 @@
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">501</Step>
   </Function>
   <Function ID="523" Type="Chaser" Name="CH_RO_TREN">
-   <Speed FadeIn="0" FadeOut="0" Duration="47"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="153"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1337,7 +1337,7 @@
   </Function>
   <Function ID="601" Type="Scene" Name="MO_B" Path="MORADO">
    <Speed FadeIn="1200" FadeOut="1200" Duration="0"/>
-   <FixtureVal ID="0">0,180,1,255,2,0,3,255,4,0</FixtureVal>
+   <FixtureVal ID="0">0,0,1,0,2,255,3,255,4,0</FixtureVal>
    <FixtureVal ID="1">0,255,1,180,2,0</FixtureVal>
    <FixtureVal ID="2">0,255,1,180,2,0</FixtureVal>
    <FixtureVal ID="3">0,255,1,180,2,0</FixtureVal>
@@ -1724,7 +1724,7 @@
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">601</Step>
   </Function>
   <Function ID="622" Type="Chaser" Name="CH_MO_TREN">
-   <Speed FadeIn="0" FadeOut="0" Duration="156"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="146"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -1886,7 +1886,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="220" Width="1085" Height="620"/>
+    <WindowState Visible="True" X="0" Y="215" Width="1085" Height="620"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -1987,7 +1987,7 @@
        <Font>Default</Font>
       </Appearance>
       <Function ID="320"/>
-      <Action FadeOut="110">StopAll</Action>
+      <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
      <Button Caption="FLASH" ID="14" Icon="">
@@ -2098,7 +2098,7 @@
        <Font>Default</Font>
       </Appearance>
       <Function ID="524"/>
-      <Action Override="0" ForceLTP="0">Flash</Action>
+      <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
     </Frame>
@@ -2113,7 +2113,7 @@
      </Appearance>
      <Visibility>127</Visibility>
      <AbsoluteValue Minimum="0" Maximum="10000"/>
-     <Time>47</Time>
+     <Time>153</Time>
      <Function FadeIn="0" FadeOut="0" Duration="6">523</Function>
     </SpeedDial>
     <Frame Caption="MORADO" ID="40">
@@ -2210,7 +2210,7 @@
        <Font>Default</Font>
       </Appearance>
       <Function ID="623"/>
-      <Action Override="0" ForceLTP="0">Flash</Action>
+      <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
     </Frame>
@@ -2225,7 +2225,7 @@
      </Appearance>
      <Visibility>127</Visibility>
      <AbsoluteValue Minimum="0" Maximum="10000"/>
-     <Time>156</Time>
+     <Time>146</Time>
      <Function FadeIn="0" FadeOut="0" Duration="6">622</Function>
     </SpeedDial>
     <SpeedDial Caption="TREN Speed" ID="15">
@@ -2239,8 +2239,22 @@
      </Appearance>
      <Visibility>127</Visibility>
      <AbsoluteValue Minimum="0" Maximum="10000"/>
-     <Time>121</Time>
+     <Time>321</Time>
      <Function FadeIn="0" FadeOut="0" Duration="6">320</Function>
+    </SpeedDial>
+    <SpeedDial Caption="TREN Trans" ID="19">
+     <WindowState Visible="True" X="410" Y="40" Width="200" Height="175"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4281150765</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Visibility>127</Visibility>
+     <AbsoluteValue Minimum="0" Maximum="10000"/>
+     <Time>139</Time>
+     <Function FadeIn="0" FadeOut="0" Duration="6">319</Function>
     </SpeedDial>
    </Frame>
    <SpeedDial Caption="Duración" ID="8">
@@ -2254,7 +2268,7 @@
     </Appearance>
     <Visibility>127</Visibility>
     <AbsoluteValue Minimum="0" Maximum="10000"/>
-    <Time>267</Time>
+    <Time>361</Time>
     <Function FadeIn="0" FadeOut="0" Duration="6">210</Function>
    </SpeedDial>
   </Frame>
